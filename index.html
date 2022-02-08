@@ -109,6 +109,7 @@
         position: absolute;
         left: 20px;
         line-height: 70px;
+        z-index: 999;
       }
       .brand a,
       .brand a:visited {
@@ -200,11 +201,22 @@
           position: static;
         }
       }
+      .nav-list {
+        padding-top: 0px;
+      }
+
       @media screen and (min-width: 799px) {
         .nav-list {
           display: block !important;
         }
       }
+
+      @media screen and (max-width: 1000px) {
+        .nav-list {
+          padding-top: 70px;
+        }
+      }
+
       #nav-toggle {
         position: absolute;
         left: 18px;
