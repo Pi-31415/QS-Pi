@@ -395,6 +395,13 @@
             </p>
           </div>
 
+          <div class="box">
+            <p>
+              💻 <b>Note</b> : Please view the article on computer for best
+              experience.
+            </p>
+          </div>
+
           <div class="box align-left">
             <h4><b>Contents</b></h4>
             <dl>
@@ -404,7 +411,7 @@
               <br />
               <dt><a href="#methods">2. Method</a></dt>
               <dd>- Data Collection</dd>
-              <dd>- Data Processing and Analysis</dd>
+              <dd>- Data Processing, Analysis and Visualization</dd>
               <br />
               <dt><a href="#dataset">3. Dataset</a></dt>
               <dd>- Collected Tabular Data</dd>
@@ -492,13 +499,14 @@
               </header>
               <div class="content">
                 <p>
-                  Due to my work, I spend an average of 10 hours on my computer
-                  daily, and usually, 9 out of those 10 hours are on web
-                  browsers. While not on web, I am usually coding on my computer
-                  or doing game design. Therefore, I assume that all of my
-                  procrastination occurs on the web. Therefore, my main
-                  objective is to track the <b>"Web-Based Procrastination"</b>,
-                  and how much time I actually <b>"work"</b>.
+                  <span class="firstcharacter">D</span>ue to my work, I spend an
+                  average of 10 hours on my computer daily, and usually, 9 out
+                  of those 10 hours are on web browsers. While not on web, I am
+                  usually coding on my computer or doing game design. Therefore,
+                  I assume that all of my procrastination occurs on the web.
+                  Therefore, my main objective is to track the
+                  <b>"Web-Based Procrastination"</b>, and how much time I
+                  actually <b>"work"</b>.
                 </p>
                 <p>
                   To track procrastination, I used a Chrome extension called
@@ -529,22 +537,26 @@
                 <p>
                   <b>Web-Based Schoolwork (Hours) :</b> Number of hours spent on
                   web-based school work. Websites for this category includes
-                  (Brightspace, WebAssign, Overleaf, Google Docs, Google Drive
-                  and Desmos)
+                  <i
+                    >(Brightspace, WebAssign, Overleaf, Google Docs, Google
+                    Drive and Desmos)</i
+                  >
                 </p>
                 <p>
                   <b>Personal Projects (Hours) :</b> Number of hours spent on
                   research, personal projects or learning web development and
                   other softwares. Websites for this category includes
-                  (Leetcode, GitHub, YouTube, Google Colab, and other
-                  programming documentation sites)
+                  <i
+                    >(Leetcode, GitHub, YouTube, Google Colab, and other
+                    programming documentation sites)</i
+                  >
                 </p>
                 <p>
                   <b>Web-Based Procrastination (Hours) :</b> Number of hours
                   spent browsing random topics to pass time. These are any
                   websites which does not fall in either schoolwork or personal
                   learning categories. Examples includes, but not limited to
-                  (Facebook, Instagram, Reddit, Messenger,Quora). This is
+                  <i>(Facebook, Instagram, Reddit, Messenger,Quora)</i>. This is
                   calculated by subtracting the time spent on school work and
                   personal learning from the total web browsing time per day.
                 </p>
@@ -555,7 +567,7 @@
                 <p>
                   <b>Total Pomodoro Sessions (Hours) :</b> Number of hours which
                   I spend working actively on computer, using Pomodoro
-                  Technique.
+                  Technique. <i>(1 Pomodoro Session = 25 Minutes)</i>
                 </p>
                 <p>
                   <b>Subjective Score :</b> A score from 0 to 10 based on gut
@@ -576,16 +588,76 @@
                 <h3>Data Collection</h3>
               </header>
               <div class="content">
-                <p>asfd</p>
+                <p>
+                  <span class="firstcharacter">A</span>s mentioned, for data
+                  collection a Chrome Extension called
+                  <a href="https://timeyourweb.com/" target="_blank"
+                    >TimeYourWeb</a
+                  >
+                  is used to track the time spent on each website.
+                  <a href="https://flowapp.info/" target="_blank">Flow</a> is
+                  used to monitor the working duration. The data is then
+                  exported as comma-separated values (CSV) file into Google
+                  Sheets. However, classification of websites into
+                  procrastination or productivity is done
+                  <b>manually by hand</b>.
+                </p>
+
+                <span class="image fit"
+                  ><img
+                    src="images/assign_1_TimeYourWeb_Tracking.png"
+                    alt="TimeYourWeb"
+                /></span>
+                <p style="text-align: center">
+                  Figure : Web Browsing History and Time Spent tracked by
+                  TimeYourWeb
+                </p>
+
+                <span class="image fit"
+                  ><img
+                    src="images/assign_1_TrackingDuringWork.png"
+                    alt="Flow1"
+                /></span>
+                <p style="text-align: center">
+                  Figure : Working Duration on computer, tracked by Flow App
+                </p>
+
+                <span class="image fit"
+                  ><img src="images/assign_1_Flow_Tracking.png" alt="Flow2"
+                /></span>
+                <p style="text-align: center">
+                  Figure : Statistics on daily working durations, by Flow App
+                </p>
               </div>
             </section>
 
             <section>
               <header>
-                <h3>Data Analysis</h3>
+                <h3>Data Processing, Analysis and Visualization</h3>
               </header>
               <div class="content">
-                <p>asfd</p>
+                <p>
+                  Once the data classified by hand, Google Sheets is used to
+                  store and analyse the data. Data Visualization is done by
+                  using a JavaScript library called
+                  <a href="https://www.chartjs.org/" target="_blank">Chart.js</a
+                  >.
+                </p>
+                <div class="box">
+                  <p>
+                    💻 <b>Note</b> : All the code for data visualization can be
+                    seen on this project's
+                    <a href="https://github.com/Pi-31415/QS-Pi" target="_blank"
+                      >Github Repo</a
+                    >.
+                  </p>
+                </div>
+                <span class="image fit"
+                  ><img src="images/assign_1_spreadsheet.png" alt="Spreadsheet"
+                /></span>
+                <p style="text-align: center">
+                  Figure : Data cleaned and processed in Google Sheets
+                </p>
               </div>
             </section>
           </div>
@@ -596,12 +668,319 @@
             <!-- Text -->
             <section>
               <header>
-                <h3>Heading</h3>
+                <h3>Collected Tabular Data</h3>
               </header>
               <div class="content">
-                <p>asfd</p>
+                <p>
+                  The cleaned tabular data is shown below, without subjective
+                  remarks.
+                </p>
+                <div class="box">
+                  <p>
+                    📊 <b>Note</b> : Download the full data (with summary of the
+                    day) as csv
+                    <a
+                      href="https://qs-pi.vercel.app/images/Pi_Data.csv"
+                      target="_blank"
+                      >here</a
+                    >.
+                  </p>
+                </div>
               </div>
             </section>
+
+            <!--Data Begins-->
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Web-Based Schoolwork (Hours)</th>
+                    <th>Personal Projects (Hours)</th>
+                    <th>Web-Based Procrastination (Hours)</th>
+                    <th>Total Time Spent on Web (Hours)</th>
+                    <th>Total Pomodoro Sessions (Hours)</th>
+                    <th>Subjective Score</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>11-Feb-2022</td>
+                    <td>1.25</td>
+                    <td>2.05</td>
+                    <td>3.50</td>
+                    <td>6.80</td>
+                    <td>1.25</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>12-Feb-2022</td>
+                    <td>5.45</td>
+                    <td>0.05</td>
+                    <td>1.80</td>
+                    <td>7.30</td>
+                    <td>8.75</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>13-Feb-2022</td>
+                    <td>3.48</td>
+                    <td>1.60</td>
+                    <td>2.22</td>
+                    <td>7.30</td>
+                    <td>5.00</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>14-Feb-2022</td>
+                    <td>0.53</td>
+                    <td>3.13</td>
+                    <td>1.94</td>
+                    <td>5.60</td>
+                    <td>4.58</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>15-Feb-2022</td>
+                    <td>0.88</td>
+                    <td>0.10</td>
+                    <td>2.52</td>
+                    <td>3.50</td>
+                    <td>0.00</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>16-Feb-2022</td>
+                    <td>2.75</td>
+                    <td>0.48</td>
+                    <td>1.57</td>
+                    <td>4.80</td>
+                    <td>5.83</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td>17-Feb-2022</td>
+                    <td>2.90</td>
+                    <td>0.10</td>
+                    <td>0.40</td>
+                    <td>3.40</td>
+                    <td>2.50</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>18-Feb-2022</td>
+                    <td>4.00</td>
+                    <td>0.77</td>
+                    <td>4.28</td>
+                    <td>9.05</td>
+                    <td>4.17</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>19-Feb-2022</td>
+                    <td>2.20</td>
+                    <td>0.03</td>
+                    <td>2.37</td>
+                    <td>4.60</td>
+                    <td>3.75</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>20-Feb-2022</td>
+                    <td>0.15</td>
+                    <td>0.45</td>
+                    <td>0.16</td>
+                    <td>0.76</td>
+                    <td>5.42</td>
+                    <td>9</td>
+                  </tr>
+                  <tr>
+                    <td>21-Feb-2022</td>
+                    <td>0.51</td>
+                    <td>1.17</td>
+                    <td>4.74</td>
+                    <td>6.42</td>
+                    <td>1.67</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>22-Feb-2022</td>
+                    <td>3.70</td>
+                    <td>0.06</td>
+                    <td>2.94</td>
+                    <td>6.70</td>
+                    <td>5.42</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td>23-Feb-2022</td>
+                    <td>2.93</td>
+                    <td>0.16</td>
+                    <td>3.51</td>
+                    <td>6.60</td>
+                    <td>6.67</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>24-Feb-2022</td>
+                    <td>4.98</td>
+                    <td>2.97</td>
+                    <td>4.08</td>
+                    <td>12.03</td>
+                    <td>5.00</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>25-Feb-2022</td>
+                    <td>0.38</td>
+                    <td>1.42</td>
+                    <td>1.62</td>
+                    <td>3.42</td>
+                    <td>0.00</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>26-Feb-2022</td>
+                    <td>0.00</td>
+                    <td>2.76</td>
+                    <td>2.77</td>
+                    <td>5.53</td>
+                    <td>0.00</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>27-Feb-2022</td>
+                    <td>3.96</td>
+                    <td>0.26</td>
+                    <td>1.64</td>
+                    <td>5.86</td>
+                    <td>6.25</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>28-Feb-2022</td>
+                    <td>6.23</td>
+                    <td>2.23</td>
+                    <td>2.87</td>
+                    <td>11.33</td>
+                    <td>8.33</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>1-Mar-2022</td>
+                    <td>1.08</td>
+                    <td>1.23</td>
+                    <td>1.07</td>
+                    <td>3.38</td>
+                    <td>1.67</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>2-Mar-2022</td>
+                    <td>0.11</td>
+                    <td>2.86</td>
+                    <td>1.53</td>
+                    <td>4.50</td>
+                    <td>1.25</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>3-Mar-2022</td>
+                    <td>6.00</td>
+                    <td>0.10</td>
+                    <td>4.61</td>
+                    <td>10.71</td>
+                    <td>2.92</td>
+                    <td>9</td>
+                  </tr>
+                  <tr>
+                    <td>4-Mar-2022</td>
+                    <td>0.13</td>
+                    <td>2.67</td>
+                    <td>1.70</td>
+                    <td>4.50</td>
+                    <td>0.42</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>5-Mar-2022</td>
+                    <td>0.00</td>
+                    <td>1.76</td>
+                    <td>3.04</td>
+                    <td>4.80</td>
+                    <td>1.67</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>6-Mar-2022</td>
+                    <td>0.60</td>
+                    <td>3.02</td>
+                    <td>1.30</td>
+                    <td>4.92</td>
+                    <td>1.25</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>7-Mar-2022</td>
+                    <td>2.31</td>
+                    <td>2.38</td>
+                    <td>1.81</td>
+                    <td>6.50</td>
+                    <td>3.33</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>8-Mar-2022</td>
+                    <td>4.60</td>
+                    <td>0.48</td>
+                    <td>1.42</td>
+                    <td>6.50</td>
+                    <td>2.92</td>
+                    <td>7</td>
+                  </tr>
+                  <tr>
+                    <td>9-Mar-2022</td>
+                    <td>4.30</td>
+                    <td>0.13</td>
+                    <td>0.52</td>
+                    <td>4.95</td>
+                    <td>4.58</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>10-Mar-2022</td>
+                    <td>2.78</td>
+                    <td>0.07</td>
+                    <td>1.65</td>
+                    <td>4.50</td>
+                    <td>3.75</td>
+                    <td>4</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--Data Ends-->
+
+            <!--Visualization Begins-->
+            <div style="border: solid red 0px">
+              <h3>Data Visualization</h3>
+              <div class="box">
+                <p>
+                  ⚠️ <b>IMPORTANT</b> : All the data visualization below are
+                  interactive. Please see
+                  <a
+                    href="https://www.youtube.com/watch?v=b_nmXmmmyfE"
+                    target="_blank"
+                    >Pi's tutorial</a
+                  >
+                  first, for a more immersive experience.
+                </p>
+              </div>
+            </div>
+            <div>
+              <canvas id="Raw_Chart"></canvas>
+            </div>
+            <!--Data Visualizaton Ends-->
           </div>
           <hr />
           <!--4. Analysis-->
@@ -610,7 +989,7 @@
             <!-- Text -->
             <section>
               <header>
-                <h3>Heading</h3>
+                <h3>asdf</h3>
               </header>
               <div class="content">
                 <p>asfd</p>
@@ -641,7 +1020,7 @@
                 <h3>Heading</h3>
               </header>
               <div class="content">
-                <p>asfd</p>
+                <p>Limitations 20 Feb - Locked Laptop, not reflected</p>
               </div>
             </section>
           </div>
@@ -768,5 +1147,187 @@
     <script src="assets/js/main.js"></script>
     <!-- Note: Only needed for demo purposes. Delete for production sites. -->
     <script src="assets/js/demo.js"></script>
+
+    <!--Raw Data Vis Script-->
+    <script>
+      const labels = [
+        "11-Feb-2022",
+        "12-Feb-2022",
+        "13-Feb-2022",
+        "14-Feb-2022",
+        "15-Feb-2022",
+        "16-Feb-2022",
+        "17-Feb-2022",
+        "18-Feb-2022",
+        "19-Feb-2022",
+        "20-Feb-2022",
+        "21-Feb-2022",
+        "22-Feb-2022",
+        "23-Feb-2022",
+        "24-Feb-2022",
+        "25-Feb-2022",
+        "26-Feb-2022",
+        "27-Feb-2022",
+        "28-Feb-2022",
+        "1-Mar-2022",
+        "2-Mar-2022",
+        "3-Mar-2022",
+        "4-Mar-2022",
+        "5-Mar-2022",
+        "6-Mar-2022",
+        "7-Mar-2022",
+        "8-Mar-2022",
+        "9-Mar-2022",
+        "10-Mar-2022",
+      ];
+
+      const subjective_records = [
+        "Woke up late, talked about arts for 5 hours. Fun but not productive",
+        "Too productive, for 10 hours straight, didn't sleep",
+        "Woke up at 1, worked on Research, hang out with a friend from 6 till midnight",
+        "Had classes, then worked on fiction writing and studied Web Devlopment at night",
+        "Only one coding practice done, not productive day (personally)... Gave research talk at the lab",
+        "Did emails, lab reports, homeworks, talked with family, procrastinated for 2 hours, pulled all nighter",
+        "Draw an artwork, did emails and relaxed.",
+        "Found a catchy song on YouTube, procrastinated too much, but completed Circuits homeworks",
+        "Woke up late, prepared formula sheet for exam, wasted some time on social media",
+        "Locked laptop in my room and studied outside. Revised for all midterms, very productive.",
+        "Studied for quiz, procrastinated too much on social media",
+        "Quiz went well, spent the day on Quantified Self Response.",
+        "All day studied for midterm. Another All nighter :(",
+        "Did and done with midterms, played video games",
+        "Relaxing after midterms, painted pictures",
+        "Wrote some fiction, cooked meal with friend.",
+        "Did homework all day",
+        "Practiced coding in morning",
+        "Worked on the personal robot project, ate dinner with friend.",
+        "Wrote fiction and made some music.",
+        "Another all nighter for homework",
+        "Electronic Circuits Homework for class, acted in a student film.",
+        "Went to ComicCon Event, went for Hot Pot with friends, very fun.",
+        "Don't know where the whole day went, worked a bit during night, finding airlines to Istanbul",
+        "Worked on homeworks, wrote a letter,slept in evening.",
+        "Completely blocked most procrastinated websites using host file. Prepare for midterms.",
+        "Prepared for midterm whole day. Sound show at night",
+        "Studied for midterm, ate dinner with friends, helped with a research paper.",
+      ];
+
+      const data_all = {
+        labels: labels,
+        datasets: [
+          {
+            label: "Web-Based Schoolwork",
+            backgroundColor: "rgb(255, 99, 132)", //Red
+            borderColor: "rgb(255, 99, 132)",
+            cubicInterpolationMode: "monotone",
+            data: [
+              1.25, 5.45, 3.48, 0.53, 0.88, 2.75, 2.9, 4, 2.2, 0.15, 0.51, 3.7,
+              2.93, 4.983, 0.38, 0, 3.96, 6.23, 1.08, 0.11, 6, 0.13, 0, 0.6,
+              2.31, 4.6, 4.3, 2.78,
+            ],
+          },
+          {
+            label: "Personal Projects",
+            backgroundColor: "rgb(54, 162, 235)", //Blue
+            borderColor: "rgb(54, 162, 235)",
+            cubicInterpolationMode: "monotone",
+            data: [
+              2.05, 0.05, 1.6, 3.13, 0.1, 0.48, 0.1, 0.77, 0.03, 0.45, 1.167,
+              0.06, 0.16, 2.966, 1.416, 2.76, 0.26, 2.23, 1.23, 2.86, 0.1,
+              2.667, 1.76, 3.016, 2.38, 0.48, 0.133, 0.07,
+            ],
+          },
+          {
+            label: "Web-Based Procrastination",
+            backgroundColor: "rgb(75, 192, 192)", //Green
+            borderColor: "rgb(75, 192, 192)",
+            cubicInterpolationMode: "monotone",
+            data: [
+              3.5, 1.8, 2.22, 1.94, 2.52, 1.57, 0.4, 4.28, 2.37, 0.16, 4.739,
+              2.94, 3.51, 4.081, 1.62, 2.77, 1.64, 2.87, 1.07, 1.53, 4.61,
+              1.703, 3.04, 1.3, 1.81, 1.42, 0.517, 1.65,
+            ],
+          },
+          {
+            label: "Total Time Spent on Web",
+            backgroundColor: "rgb(255, 205, 86)", //Yellow
+            borderColor: "rgb(255, 205, 86)",
+            cubicInterpolationMode: "monotone",
+            data: [
+              6.8, 7.3, 7.3, 5.6, 3.5, 4.8, 3.4, 9.05, 4.6, 0.76, 6.42, 6.7,
+              6.6, 12.03, 3.42, 5.53, 5.86, 11.33, 3.38, 4.5, 10.71, 4.5, 4.8,
+              4.92, 6.5, 6.5, 4.95, 4.5,
+            ],
+          },
+          {
+            label: "Total Pomodoro Sessions",
+            backgroundColor: "rgb(151, 153, 157)", //Grey
+            borderColor: "rgb(151, 153, 157)",
+            cubicInterpolationMode: "monotone",
+            data: [
+              1.25, 8.75, 5.0, 4.58, 0.0, 5.83, 2.5, 4.17, 3.75, 5.42, 1.67,
+              5.42, 6.67, 5.0, 0.0, 0.0, 6.25, 8.33, 1.67, 1.25, 2.92, 0.42,
+              1.67, 1.25, 3.33, 2.92, 4.58, 3.75,
+            ],
+          },
+          {
+            label: "Subjective Score",
+            backgroundColor: "rgb(255, 160, 63)", //Orange
+            borderColor: "rgb(255, 160, 63)",
+            cubicInterpolationMode: "monotone",
+            data: [
+              4, 10, 2, 8, 1, 6, 1, 8, 5, 9, 2, 6, 10, 10, 2, 3, 8, 2, 4, 5, 9,
+              8, 2, 2, 8, 7, 10, 4,
+            ],
+          },
+        ],
+      };
+
+      //Code for subjective data
+      const footer = (tooltipItems) => {
+        let current_tooltip_index = 0;
+        tooltipItems.forEach(function (tooltipItem) {
+          current_tooltip_index = tooltipItem.dataIndex;
+        });
+        return "What I did : " + subjective_records[current_tooltip_index];
+      };
+
+      const config = {
+        type: "line",
+        data: data_all,
+        options: {
+          interaction: {
+            intersect: false,
+            mode: "index",
+          },
+          plugins: {
+            tooltip: {
+              callbacks: {
+                footer: footer,
+              },
+            },
+          },
+          scales: {
+            y: {
+              display: true,
+              title: {
+                display: true,
+                text: "Number of Hours",
+              },
+            },
+            x: {
+              display: true,
+              title: {
+                display: true,
+                text: "Date",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <script>
+      const myChart = new Chart(document.getElementById("Raw_Chart"), config);
+    </script>
   </body>
 </html>
