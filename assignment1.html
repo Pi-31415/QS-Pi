@@ -293,6 +293,7 @@
     /></noscript>
     <script src="./libs/jquery.min.js"></script>
     <script src="./libs/chart.min.js"></script>
+    <script src="./libs/chartjs-plugin-trendline.js"></script>
   </head>
 
   <body class="is-preload">
@@ -390,7 +391,7 @@
             <p>
               <b>Pi Ko</b>
               <br />
-              <i>Feb 22, 2022 - 984 words . 3 min read</i>
+              <i>Mar 12, 2022 - 1500 words . 5 min read</i>
             </p>
           </div>
 
@@ -401,27 +402,29 @@
               <dd>- Rationale</dd>
               <dd>- Description of Data</dd>
               <br />
-              <dt>2. Method</dt>
+              <dt><a href="#methods">2. Method</a></dt>
               <dd>- Data Collection</dd>
               <dd>- Data Processing and Analysis</dd>
               <br />
-              <dt>3. Dataset</dt>
+              <dt><a href="#dataset">3. Dataset</a></dt>
               <dd>- Collected Tabular Data</dd>
               <dd>- Data Visualization</dd>
               <br />
-              <dt>4. Analysis</dt>
+              <dt><a href="#analysis">4. Analysis</a></dt>
               <dd>- Trends</dd>
               <dd>- Key Takeaways</dd>
               <br />
-              <dt>5. Application to life</dt>
+              <dt><a href="#applications">5. Applications</a></dt>
               <dd>- Modifications to my lifestyle</dd>
               <br />
-              <dt>6. Questions and Reflection</dt>
+              <dt><a href="#questions">6. Questions and Reflection</a></dt>
               <dd>- Questions</dd>
               <dd>- Personal Reflection</dd>
               <dd>- Limitations</dd>
               <br />
-              <dt>7. Relation to Course Materials</dt>
+              <dt>
+                <a href="#relations">7. Relation to Course Materials</a>
+              </dt>
               <dd>- Dear Data</dd>
               <dd>- Benjamin Franklin</dd>
             </dl>
@@ -436,7 +439,223 @@
                 <h3>Rationale</h3>
               </header>
               <div class="content">
-                <p></p>
+                <span class="image fit"
+                  ><img
+                    src="images/assign_1_Yak_shaving.jpeg"
+                    alt="Yak Shaving"
+                /></span>
+                <p style="text-align: center">
+                  Figure : A Crash Course in Yak Shaving [
+                  <a
+                    href="https://en.wiktionary.org/wiki/yak_shaving"
+                    target="_blank"
+                    >Source</a
+                  >
+                  ]
+                </p>
+                <p>
+                  <span class="firstcharacter">T</span>his year, I learnt a new
+                  term, called <i>"Yak Shaving"</i>. It says that when we try to
+                  focus on something, we often lose focus and end up doing
+                  millions of little other things which have nothing to do with
+                  our original task, but we still think that we are working on
+                  the original task. As someone who chose an intense Computer
+                  Engineering major, and has uncountable side projects under his
+                  belt, I usually believe that I am pretty productive, until
+                  life happens this semester. I realized that I have not
+                  actually been working on the side projects as much as I think
+                  I am, and worse, this semester, my GPA resembles the stock
+                  market right now. It's going down!
+                </p>
+                <blockquote>
+                  “My GPA resembles the stock market right now. It's going
+                  down!”
+                  <br />
+                  ― Pi
+                </blockquote>
+                <p>
+                  The main culprit is of course, procrastination. Like a ninja,
+                  procrastination remains stealth and assassinated my valuable
+                  free time, minute by minute. Still, my brain fools me that I
+                  am still productive. However, there is no concrete data or
+                  evidence to analyze where, when and how I procrastinate, and
+                  what triggers it. Therefore, I decided to publicly track my
+                  procrastination data in my Quantified Self class, so that I
+                  can make changes to my lifestyle to minimize it.
+                </p>
+              </div>
+            </section>
+
+            <section>
+              <header>
+                <h3>Descripton of Data</h3>
+              </header>
+              <div class="content">
+                <p>
+                  Due to my work, I spend an average of 10 hours on my computer
+                  daily, and usually, 9 out of those 10 hours are on web
+                  browsers. While not on web, I am usually coding on my computer
+                  or doing game design. Therefore, I assume that all of my
+                  procrastination occurs on the web. Therefore, my main
+                  objective is to track the <b>"Web-Based Procrastination"</b>,
+                  and how much time I actually <b>"work"</b>.
+                </p>
+                <p>
+                  To track procrastination, I used a Chrome extension called
+                  <a href="https://timeyourweb.com/" target="_blank"
+                    >TimeYourWeb</a
+                  >, which records my browsing history, and the time I spent on
+                  each website. This makes it easy to track procrastination,
+                  because particular websites are associated with productivity
+                  (e.g. Google Docs, Github) while others are associated with
+                  procrastination (e.g. Facebook and Social Media). I classify
+                  my procrastination and productivity time based on the websites
+                  I visit. Of course, there are exceptions like YouTube, where I
+                  learn new tech skills, and browse meme videos. Such websites
+                  are evaluated on case by case basis daily.
+                </p>
+                <p>
+                  When I work, I use the
+                  <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique"
+                    >Pomodoro Technique </a
+                  >, where I split my working time into 25 minute intervals and
+                  focus on a task each time. To track my working time, I use a
+                  Pomodoro timer called
+                  <a href="https://flowapp.info/" target="_blank">Flow</a>,
+                  while working on computer. The following data is tracked daily
+                  for 28 days.
+                </p>
+                <p><b>Date :</b> Date of a particular day</p>
+                <p>
+                  <b>Web-Based Schoolwork (Hours) :</b> Number of hours spent on
+                  web-based school work. Websites for this category includes
+                  (Brightspace, WebAssign, Overleaf, Google Docs, Google Drive
+                  and Desmos)
+                </p>
+                <p>
+                  <b>Personal Projects (Hours) :</b> Number of hours spent on
+                  research, personal projects or learning web development and
+                  other softwares. Websites for this category includes
+                  (Leetcode, GitHub, YouTube, Google Colab, and other
+                  programming documentation sites)
+                </p>
+                <p>
+                  <b>Web-Based Procrastination (Hours) :</b> Number of hours
+                  spent browsing random topics to pass time. These are any
+                  websites which does not fall in either schoolwork or personal
+                  learning categories. Examples includes, but not limited to
+                  (Facebook, Instagram, Reddit, Messenger,Quora). This is
+                  calculated by subtracting the time spent on school work and
+                  personal learning from the total web browsing time per day.
+                </p>
+                <p>
+                  <b>Total Time Spent on Web (Hours) :</b> Total hours spent per
+                  day on web browser, taken directly from Chrome Extension
+                </p>
+                <p>
+                  <b>Total Pomodoro Sessions (Hours) :</b> Number of hours which
+                  I spend working actively on computer, using Pomodoro
+                  Technique.
+                </p>
+                <p>
+                  <b>Subjective Score :</b> A score from 0 to 10 based on gut
+                  feeling. 0 means no productivity at all. 10 means maximum
+                  productivity.
+                </p>
+                <p><b>Remark :</b> A brief subjective description of the day</p>
+              </div>
+            </section>
+          </div>
+          <hr />
+          <!--2. Methods Section-->
+          <h3 id="methods">2. Method</h3>
+          <div class="index align-left">
+            <!-- Text -->
+            <section>
+              <header>
+                <h3>Data Collection</h3>
+              </header>
+              <div class="content">
+                <p>asfd</p>
+              </div>
+            </section>
+
+            <section>
+              <header>
+                <h3>Data Analysis</h3>
+              </header>
+              <div class="content">
+                <p>asfd</p>
+              </div>
+            </section>
+          </div>
+          <hr />
+          <!--3. Dataset-->
+          <h3 id="dataset">3. Dataset</h3>
+          <div class="index align-left">
+            <!-- Text -->
+            <section>
+              <header>
+                <h3>Heading</h3>
+              </header>
+              <div class="content">
+                <p>asfd</p>
+              </div>
+            </section>
+          </div>
+          <hr />
+          <!--4. Analysis-->
+          <h3 id="analysis">4. Analysis</h3>
+          <div class="index align-left">
+            <!-- Text -->
+            <section>
+              <header>
+                <h3>Heading</h3>
+              </header>
+              <div class="content">
+                <p>asfd</p>
+              </div>
+            </section>
+          </div>
+          <hr />
+          <!--5. Applications-->
+          <h3 id="applications">5. Applications</h3>
+          <div class="index align-left">
+            <!-- Text -->
+            <section>
+              <header>
+                <h3>Heading</h3>
+              </header>
+              <div class="content">
+                <p>asfd</p>
+              </div>
+            </section>
+          </div>
+          <hr />
+          <!--6. Questions-->
+          <h3 id="questions">6. Questions and Reflections</h3>
+          <div class="index align-left">
+            <!-- Text -->
+            <section>
+              <header>
+                <h3>Heading</h3>
+              </header>
+              <div class="content">
+                <p>asfd</p>
+              </div>
+            </section>
+          </div>
+          <hr />
+          <!--7. Relations-->
+          <h3 id="relations">7. Relation to Course Materials</h3>
+          <div class="index align-left">
+            <!-- Text -->
+            <section>
+              <header>
+                <h3>Heading</h3>
+              </header>
+              <div class="content">
+                <p>asfd</p>
               </div>
             </section>
           </div>
