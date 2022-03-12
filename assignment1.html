@@ -105,6 +105,15 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
+    <!--KATEX for maths-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
     <style>
       body {
         margin: 0px;
@@ -293,7 +302,6 @@
     /></noscript>
     <script src="./libs/jquery.min.js"></script>
     <script src="./libs/chart.min.js"></script>
-    <script src="./libs/chartjs-plugin-trendline.js"></script>
   </head>
 
   <body class="is-preload">
@@ -385,13 +393,13 @@
           <span>Assignment 1</span>
           <h2>Pi's Procrastination Parable</h2>
           <p>
-            How I attempt to minimize procrastination and optimize productivity
+            Quantitative Self-analysis of Pi's Procrastination and Minimization Measures Implemented
           </p>
           <div style="text-align: left">
             <p>
               <b>Pi Ko</b>
               <br />
-              <i>Mar 12, 2022 - 1500 words . 5 min read</i>
+              <i>Mar 12, 2022 - 1700 words . 5.7 min read</i>
             </p>
           </div>
 
@@ -409,7 +417,7 @@
               <dd>- Rationale</dd>
               <dd>- Description of Data</dd>
               <br />
-              <dt><a href="#methods">2. Method</a></dt>
+              <dt><a href="#methods">2. Methodology</a></dt>
               <dd>- Data Collection</dd>
               <dd>- Data Processing, Analysis and Visualization</dd>
               <br />
@@ -424,10 +432,9 @@
               <dt><a href="#applications">5. Applications</a></dt>
               <dd>- Modifications to my lifestyle</dd>
               <br />
-              <dt><a href="#questions">6. Questions and Reflection</a></dt>
+              <dt><a href="#questions">6. Questions and Reflections</a></dt>
               <dd>- Questions</dd>
-              <dd>- Personal Reflection</dd>
-              <dd>- Limitations</dd>
+              <dd>- Reflections</dd>
               <br />
               <dt>
                 <a href="#relations">7. Relation to Course Materials</a>
@@ -469,10 +476,10 @@
                   the original task. As someone who chose an intense Computer
                   Engineering major, and has uncountable side projects under his
                   belt, I usually believe that I am pretty productive, until
-                  life happens this semester. I realized that I have not
+                  life happens this semester. <b>I realized that I yak shave a lot</b>. I have not
                   actually been working on the side projects as much as I think
                   I am, and worse, this semester, my GPA resembles the stock
-                  market right now. It's going down!
+                  market right now. It's going down 📉! 
                 </p>
                 <blockquote>
                   “My GPA resembles the stock market right now. It's going
@@ -481,7 +488,7 @@
                   ― Pi
                 </blockquote>
                 <p>
-                  The main culprit is of course, procrastination. Like a ninja,
+                  The main culprit is of course, procrastination. Like a ninja 🥷,
                   procrastination remains stealth and assassinated my valuable
                   free time, minute by minute. Still, my brain fools me that I
                   am still productive. However, there is no concrete data or
@@ -524,9 +531,11 @@
                 </p>
                 <p>
                   When I work, I use the
-                  <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique"
+                  <a
+                    href="https://en.wikipedia.org/wiki/Pomodoro_Technique"
+                    target="_blank"
                     >Pomodoro Technique </a
-                  >, where I split my working time into 25 minute intervals and
+                  > 🍅, where I split my working time into 25 minute intervals and
                   focus on a task each time. To track my working time, I use a
                   Pomodoro timer called
                   <a href="https://flowapp.info/" target="_blank">Flow</a>,
@@ -580,7 +589,7 @@
           </div>
           <hr />
           <!--2. Methods Section-->
-          <h3 id="methods">2. Method</h3>
+          <h3 id="methods">2. Methodology</h3>
           <div class="index align-left">
             <!-- Text -->
             <section>
@@ -600,7 +609,7 @@
                   exported as comma-separated values (CSV) file into Google
                   Sheets. However, classification of websites into
                   procrastination or productivity is done
-                  <b>manually by hand</b>.
+                  <b>manually by hand</b> 🤚.
                 </p>
 
                 <span class="image fit"
@@ -971,7 +980,7 @@
                   <a
                     href="https://www.youtube.com/watch?v=b_nmXmmmyfE"
                     target="_blank"
-                    >Pi's tutorial</a
+                    >Pi's tutorial 🎥 </a
                   >
                   first, for a more immersive experience.
                 </p>
@@ -989,10 +998,79 @@
             <!-- Text -->
             <section>
               <header>
-                <h3>asdf</h3>
+                <h3>Trends</h3>
               </header>
               <div class="content">
-                <p>asfd</p>
+                <p>
+                  While the time series above summarizes the data, general
+                  patterns can be observed by analyzing the subsets of data, in
+                  different ways as below.
+                </p>
+
+                <div>
+                  <canvas id="Analysis0"></canvas>
+                </div>
+                
+                <p>Firstly, I kept track of the categories of websites I visited too. As seen above, I <b>am addicted to Facebook</b>. I spend around 24% more time on Facebook than the academic websites where I do my homework (e.g. Web Assign, Brightspace). Surprisingly, YouTube is did not waste my time that much. </p>
+
+                <div>
+                  <canvas id="Analysis1"></canvas>
+                </div>
+
+                <p>Secondly, we can see that I procrastinated every day. As in scatter plot above, the more time I spent on web, the more I procrastinate. Even on the day where I locked my laptop in my room and studied outside (leftmost data point), I wasted 10 minutes on Facebook.</p>
+
+                <div style="text-align: center;align-items: center;">
+                  <div style="width:50%;margin-left: auto; margin-right: auto;">
+                    <canvas id="Analysis2"></canvas>
+                  </div>
+                </div>
+
+                <p>Moreover, as in the Doughnut chart above, my procrastination time approximately equals my schoolwork duration on average (around 40% of total web browsing time). I procrastinated twice more than the time I spend on my personal projects. This is humiliating 😢. </p>
+
+                <div>
+                  <canvas id="Analysis3"></canvas>
+                </div>
+                
+
+                <p>In addition, as seen in the trend above, I procrastinate about <b>2.27 hours per day</b> on average. The pattern is that if there are any days where I procrastinate too little, they are followed by days where I procrastinate a lot (e.g. 20<sup>th</sup> and 21<sup>st</sup> Feb). Web-based procrastination sums up to 64 hours during this experiment, which is <b>3 days per month</b>.</p>
+
+                <blockquote>
+                  “My rate of procrastination  is 3 days per month.”
+                  <br />
+                  ― Pi
+                </blockquote>
+
+                <div>
+                  <canvas id="Analysis4"></canvas>
+                </div>
+                <p>Lastly, the graph above suggests that roughly, I have a correct estimation of how productive I am. There is a weak relationship between the subjective score I assign and the total time I work. The outliers may be because on those days, I worked on things which did not require my computer <i>(e.g. writing homework on paper)</i>.</p>
+              </div>
+            </section>
+
+            <section>
+              <header>
+                <h3>Key Takeaways</h3>
+              </header>
+              <div class="content">
+                <p>
+                  From the observations above, we can formulate the following <b>Pi's Laws of Procrastination</b>, assuming all other factors remain constant.
+                  <div class="box">
+                    <p>
+                      <b>First Law</b> : Procrastination is inevitable. I either procrastinate a healthy amount of 2.27 hours per day, or expect extreme lows followed by extreme highs. <br>
+
+                      <p style="text-align: center;"> \(\frac{\partial }{\partial t} \left( T_{\text{procrastination}}[n+1]\right)=-k \frac{\partial}{\partial t} \left( T_{\text{procrastination}}[n]\right)  \)</p>
+                      <p style="text-align: center;"> \(\forall  n \in \mathbb{Z} , T_{\text{procrastination}} > 0   \)</p>
+                    </p>
+                    <p>
+                      <b>Second Law</b> : On average, I procrastinate as much as I work. 
+                      <p style="text-align: center;"> \( \lim_{n \to +\infty} \frac{\sum_{i=0}^{n} T_{\text{procrastination}}[i]}{n} \approx \lim_{n \to +\infty}  \frac{\sum_{i=0}^{n} T_{\text{working time}}[i]}{n}\) </p>
+                    </p>
+                    <p>
+                      <b>Third Law</b> : The more time I spend on web, the more I procrastinate.
+                      <p style="text-align: center;">\(T_{\text{procrastination}}\approx 0.4 \times T_{\text{time on web}} \)</p>
+                    </p>
+                  </div>
+                </p>
               </div>
             </section>
           </div>
@@ -1003,10 +1081,24 @@
             <!-- Text -->
             <section>
               <header>
-                <h3>Heading</h3>
+                <h3>Modifications to <br> my lifestyle</h3>
               </header>
               <div class="content">
-                <p>asfd</p>
+                <p>Now that I know I am addicted to Facebook (and other social media), I decided to cut down the usage by blocking it. I have tried blocking it with Chrome Extensions in the past, but they are ineffective because <b>it only takes me a few clicks</b> to remove the restrictions in the same browser. Therefore, I take a step further this time by blocking all social-media related URLs on my computer host file as below.</p>
+                <span class="image fit"
+                ><img src="images/assign_1_host.png" alt="HostFile"
+              /></span>
+              <p style="text-align: center">
+                Figure : Blocking Facebook and other time killers by Host File <br>(Blocking Amazon also saved my dollars 💰)
+              </p>
+
+              <p>Of course, I can never fully censor anything, but can only make it difficult to access. This is the most technically difficult I can go <i>(without blocking my WiFi)</i>.</p>
+              <p>Moreover, when I estimate the time required to work these days, I also take the procrastination time ⌚ into account, which is approximately equal to the time taken for that task. </p>
+              <blockquote>
+                “If I think I will take <b>1 hour</b> to do a particular task, the actual time required is <b>at least 2.5 hours</b> <span style="font-style: normal;">🤯</span> .”
+                <br />
+                ― Pi
+              </blockquote>
               </div>
             </section>
           </div>
@@ -1017,10 +1109,32 @@
             <!-- Text -->
             <section>
               <header>
-                <h3>Heading</h3>
+                <h3>Questions</h3>
               </header>
               <div class="content">
-                <p>Limitations 20 Feb - Locked Laptop, not reflected</p>
+                <p>The following are my answers to some guiding questions.</p>
+              
+                <p><b>How easy or difficult was it to remember always to complete / process the tracking data? </b><br>Remembering the data collection was not a problem since data collection was automated. Only the manual classification of data took me some time.</p>
+
+                <p><b>Did the visualization software impose some constraints you would have not preferred to have? </b><br>Not at all, and this is the reason why I selected Chart.js library, and decided to code this website myself 👨‍💻. I was able to implement all the visual storytelling I wanted. This way, I was able to implement by subjective data to pop-up when viewers hover on my graphs produced from objective data.</p>
+
+                <p><b>Would you prefer for this data to be "forgotten"? </b><br>No. Productivity is very important to me and I was going to do this project anyway even if this assignment did not exist. However, this assignment forced me to do this data tracking more properly.</p>
+
+                <p><b>If you were to collect much more data (either over a longer time or with many more data points per day), how might your conclusions differ? </b><br>I blocked all social media on 8<sup>th</sup> Mar 2022, which is 2 days before experiment ended. Therefore, the effects of this blockage is not visible. I will continue to collect the data, and I expect a significant decrease in average daily procrastination time.</p>
+
+              </div>
+            </section>
+            <section>
+              <header>
+                <h3>Reflections</h3>
+              </header>
+              <div class="content">
+                <p>Of course, this experiment comes with limitations. Ones I can identify are as follows.</p>
+                <ul>
+                  <li>The work which I do not do on my laptop is not included in the data.</li>
+                  <li>The data is only from my laptop and, no other devices. Due to procrastination on my phone and iPad, I do waste more time in reality. </li>
+                  <li>Due to <a href="https://en.wikipedia.org/wiki/Hawthorne_effect" target="_blank">Hawthrone Effect</a>, my working behaviour is different when I am consciously monitoring it. This is a good thing because I ended up intentionally spending more time on academic websites this month 😉.</li>
+                </ul>
               </div>
             </section>
           </div>
@@ -1031,12 +1145,47 @@
             <!-- Text -->
             <section>
               <header>
-                <h3>Heading</h3>
+                <h3>Dear Data</h3>
               </header>
               <div class="content">
-                <p>asfd</p>
+                <p>
+                  My project has partial resembalance to Giorgia Lupi and Stefanie Posavec's <a href="http://www.dear-data.com/theproject/" target="_blank">Dear Data</a> project since I am visualizing the data about a part of my life. However, there are main differences because mine is a quantified-self project, wheras theirs is not. In their own words - 
+                </p>
+
+                <blockquote>
+                  “We’ve always conceived Dear Data as a personal documentary rather than a quantified-self project which is a subtle – but important – distinction. ”
+                  <br />
+                  ― <a href="http://www.dear-data.com/theproject/" target="_blank">Dear Data Website</a>
+                </blockquote>
+
+                Moreover, I collected data over a long term wheras Dear Data changes the data type every week. Their main purpose was to keep the communication between friends going while my objective is to gain knowledge about my procrastination and make changes to my life.
+
               </div>
             </section>
+
+            <section>
+              <header>
+                <h3>
+                  Benjamin Franklin</h3>
+              </header>
+              <div class="content">
+                <p>My project resonates more with Benjamin Franklin. Although Franklin was aiming for moral perfection, and I was aiming for procrastination reduction, we have a common purpose - to improve oneself through collecting data.</p>
+                <blockquote>
+                  “ It was about this time I conceived the bold and arduous project of
+                  arriving at moral perfection. I wish'd to live without committing any
+                  fault at any time; I would conquer all that either natural
+                  inclination, custom, or company might lead me into.”
+                  <br />
+                  ― Autobiography of Benjamin Franklin, by Benjamin Franklin
+                </blockquote>
+                <p>However, Franklin's data is very subjective wheras mine is more concrete and quantifiable. Moreover, Franklin focused on multiple virtues (or data types), wheras I am only focused mainly on procrastination data. If I remember the reading correctly, Franklin did not include a method or measure to correct his actions through the analysis of his data, since he only talks about self-examination. My project, in contrast, suggests methods to reduce my procrastination time, like a self-correcting feedback loop through the analysis of my data. </p>
+              </div>
+            </section>
+          </div>
+          <div class="box">
+            <p>
+              <b>✓ Ready to Grade - 12<sup>th</sup> Mar 2022</b>
+            </p>
           </div>
         </div>
       </section>
@@ -1150,7 +1299,7 @@
 
     <!--Raw Data Vis Script-->
     <script>
-      const labels = [
+      const dates = [
         "11-Feb-2022",
         "12-Feb-2022",
         "13-Feb-2022",
@@ -1212,87 +1361,112 @@
         "Studied for midterm, ate dinner with friends, helped with a research paper.",
       ];
 
+      const data_schoolwork = [
+        1.25, 5.45, 3.48, 0.53, 0.88, 2.75, 2.9, 4, 2.2, 0.15, 0.51, 3.7, 2.93,
+        4.983, 0.38, 0, 3.96, 6.23, 1.08, 0.11, 6, 0.13, 0, 0.6, 2.31, 4.6, 4.3,
+        2.78,
+      ];
+      const data_personalproject = [
+        2.05, 0.05, 1.6, 3.13, 0.1, 0.48, 0.1, 0.77, 0.03, 0.45, 1.167, 0.06,
+        0.16, 2.966, 1.416, 2.76, 0.26, 2.23, 1.23, 2.86, 0.1, 2.667, 1.76,
+        3.016, 2.38, 0.48, 0.133, 0.07,
+      ];
+      const data_procrastination = [
+        3.5, 1.8, 2.22, 1.94, 2.52, 1.57, 0.4, 4.28, 2.37, 0.16, 4.739, 2.94,
+        3.51, 4.081, 1.62, 2.77, 1.64, 2.87, 1.07, 1.53, 4.61, 1.703, 3.04, 1.3,
+        1.81, 1.42, 0.517, 1.65,
+      ];
+      const data_total_time = [
+        6.8, 7.3, 7.3, 5.6, 3.5, 4.8, 3.4, 9.05, 4.6, 0.76, 6.42, 6.7, 6.6,
+        12.03, 3.42, 5.53, 5.86, 11.33, 3.38, 4.5, 10.71, 4.5, 4.8, 4.92, 6.5,
+        6.5, 4.95, 4.5,
+      ];
+      const data_pomodoro = [
+        1.25, 8.75, 5.0, 4.58, 0.0, 5.83, 2.5, 4.17, 3.75, 5.42, 1.67, 5.42,
+        6.67, 5.0, 0.0, 0.0, 6.25, 8.33, 1.67, 1.25, 2.92, 0.42, 1.67, 1.25,
+        3.33, 2.92, 4.58, 3.75,
+      ];
+      const data_subjective_score = [
+        4, 10, 2, 8, 1, 6, 1, 8, 5, 9, 2, 6, 10, 10, 2, 3, 8, 2, 4, 5, 9, 8, 2,
+        2, 8, 7, 10, 4,
+      ];
+      const labels = [
+        "Web-Based Schoolwork",
+        "Personal Projects",
+        "Web-Based Procrastination",
+        "Total Time Spent on Web",
+        "Total Pomodoro Sessions",
+        "Subjective Score",
+      ];
+
+      const dataset_raw = [
+        {
+          label: labels[0],
+          backgroundColor: "rgb(255, 99, 132)", //Red
+          borderColor: "rgb(255, 99, 132)",
+          cubicInterpolationMode: "monotone",
+          data: data_schoolwork,
+        },
+        {
+          label: labels[1],
+          backgroundColor: "rgb(54, 162, 235)", //Blue
+          borderColor: "rgb(54, 162, 235)",
+          cubicInterpolationMode: "monotone",
+          data: data_personalproject,
+        },
+        {
+          label: labels[2],
+          backgroundColor: "rgb(75, 192, 192)", //Green
+          borderColor: "rgb(75, 192, 192)",
+          cubicInterpolationMode: "monotone",
+          data: data_procrastination,
+        },
+        {
+          label: labels[3],
+          backgroundColor: "rgb(255, 205, 86)", //Yellow
+          borderColor: "rgb(255, 205, 86)",
+          cubicInterpolationMode: "monotone",
+          data: data_total_time,
+        },
+        {
+          label: labels[4],
+          backgroundColor: "rgb(151, 153, 157)", //Grey
+          borderColor: "rgb(151, 153, 157)",
+          cubicInterpolationMode: "monotone",
+          data: data_pomodoro,
+        },
+        {
+          label: labels[5],
+          backgroundColor: "rgb(255, 160, 63)", //Orange
+          borderColor: "rgb(255, 160, 63)",
+          cubicInterpolationMode: "monotone",
+          data: data_subjective_score,
+        },
+      ];
+
       const data_all = {
-        labels: labels,
-        datasets: [
-          {
-            label: "Web-Based Schoolwork",
-            backgroundColor: "rgb(255, 99, 132)", //Red
-            borderColor: "rgb(255, 99, 132)",
-            cubicInterpolationMode: "monotone",
-            data: [
-              1.25, 5.45, 3.48, 0.53, 0.88, 2.75, 2.9, 4, 2.2, 0.15, 0.51, 3.7,
-              2.93, 4.983, 0.38, 0, 3.96, 6.23, 1.08, 0.11, 6, 0.13, 0, 0.6,
-              2.31, 4.6, 4.3, 2.78,
-            ],
-          },
-          {
-            label: "Personal Projects",
-            backgroundColor: "rgb(54, 162, 235)", //Blue
-            borderColor: "rgb(54, 162, 235)",
-            cubicInterpolationMode: "monotone",
-            data: [
-              2.05, 0.05, 1.6, 3.13, 0.1, 0.48, 0.1, 0.77, 0.03, 0.45, 1.167,
-              0.06, 0.16, 2.966, 1.416, 2.76, 0.26, 2.23, 1.23, 2.86, 0.1,
-              2.667, 1.76, 3.016, 2.38, 0.48, 0.133, 0.07,
-            ],
-          },
-          {
-            label: "Web-Based Procrastination",
-            backgroundColor: "rgb(75, 192, 192)", //Green
-            borderColor: "rgb(75, 192, 192)",
-            cubicInterpolationMode: "monotone",
-            data: [
-              3.5, 1.8, 2.22, 1.94, 2.52, 1.57, 0.4, 4.28, 2.37, 0.16, 4.739,
-              2.94, 3.51, 4.081, 1.62, 2.77, 1.64, 2.87, 1.07, 1.53, 4.61,
-              1.703, 3.04, 1.3, 1.81, 1.42, 0.517, 1.65,
-            ],
-          },
-          {
-            label: "Total Time Spent on Web",
-            backgroundColor: "rgb(255, 205, 86)", //Yellow
-            borderColor: "rgb(255, 205, 86)",
-            cubicInterpolationMode: "monotone",
-            data: [
-              6.8, 7.3, 7.3, 5.6, 3.5, 4.8, 3.4, 9.05, 4.6, 0.76, 6.42, 6.7,
-              6.6, 12.03, 3.42, 5.53, 5.86, 11.33, 3.38, 4.5, 10.71, 4.5, 4.8,
-              4.92, 6.5, 6.5, 4.95, 4.5,
-            ],
-          },
-          {
-            label: "Total Pomodoro Sessions",
-            backgroundColor: "rgb(151, 153, 157)", //Grey
-            borderColor: "rgb(151, 153, 157)",
-            cubicInterpolationMode: "monotone",
-            data: [
-              1.25, 8.75, 5.0, 4.58, 0.0, 5.83, 2.5, 4.17, 3.75, 5.42, 1.67,
-              5.42, 6.67, 5.0, 0.0, 0.0, 6.25, 8.33, 1.67, 1.25, 2.92, 0.42,
-              1.67, 1.25, 3.33, 2.92, 4.58, 3.75,
-            ],
-          },
-          {
-            label: "Subjective Score",
-            backgroundColor: "rgb(255, 160, 63)", //Orange
-            borderColor: "rgb(255, 160, 63)",
-            cubicInterpolationMode: "monotone",
-            data: [
-              4, 10, 2, 8, 1, 6, 1, 8, 5, 9, 2, 6, 10, 10, 2, 3, 8, 2, 4, 5, 9,
-              8, 2, 2, 8, 7, 10, 4,
-            ],
-          },
-        ],
+        labels: dates,
+        datasets: dataset_raw,
       };
 
       //Code for subjective data
       const footer = (tooltipItems) => {
         let current_tooltip_index = 0;
+        let label_temp = "";
         tooltipItems.forEach(function (tooltipItem) {
           current_tooltip_index = tooltipItem.dataIndex;
+          label_temp = tooltipItem.dataset.label;
         });
-        return "What I did : " + subjective_records[current_tooltip_index];
+        if((label_temp == "Trendline")){
+          return "";
+        }else if ((label_temp == "Average")){
+          return "";
+        }else{
+          return "What I did : " + subjective_records[current_tooltip_index];
+        }
       };
 
-      const config = {
+      const config_raw = {
         type: "line",
         data: data_all,
         options: {
@@ -1306,13 +1480,21 @@
                 footer: footer,
               },
             },
+            title: {
+              display: true,
+              text: "Time series of collected data",
+            },
+            subtitle: {
+              display: true,
+              text: "Click on colored rectangles below to show/hide data. Hover on points to see subjective remarks. ",
+            },
           },
           scales: {
             y: {
               display: true,
               title: {
                 display: true,
-                text: "Number of Hours",
+                text: "Number of Hours (except Subjective Score)",
               },
             },
             x: {
@@ -1326,8 +1508,385 @@
         },
       };
     </script>
+
     <script>
-      const myChart = new Chart(document.getElementById("Raw_Chart"), config);
+      const Raw_chart_1 = new Chart(
+        document.getElementById("Raw_Chart"),
+        config_raw
+      );
     </script>
+
+    <!--Analysis Charts-->
+    <script>
+      const data2 = {
+        labels: [""],
+        datasets: [
+          {
+            type: "scatter",
+            label: "Web-Based Procrastination vs Total Time Spent on Web",
+            data: [
+              { x: 6.8, y: 3.5 },
+              { x: 7.3, y: 1.8 },
+              { x: 7.3, y: 2.22 },
+              { x: 5.6, y: 1.94 },
+              { x: 3.5, y: 2.52 },
+              { x: 4.8, y: 1.57 },
+              { x: 3.4, y: 0.4 },
+              { x: 9.05, y: 4.28 },
+              { x: 4.6, y: 2.37 },
+              { x: 0.76, y: 0.16 },
+              { x: 6.42, y: 4.74 },
+              { x: 6.7, y: 2.94 },
+              { x: 6.6, y: 3.51 },
+              { x: 12.03, y: 4.08 },
+              { x: 3.42, y: 1.62 },
+              { x: 5.53, y: 2.77 },
+              { x: 5.86, y: 1.64 },
+              { x: 11.33, y: 2.87 },
+              { x: 3.38, y: 1.07 },
+              { x: 4.5, y: 1.53 },
+              { x: 10.71, y: 4.61 },
+              { x: 4.5, y: 1.7 },
+              { x: 4.8, y: 3.04 },
+              { x: 4.92, y: 1.3 },
+              { x: 6.5, y: 1.81 },
+              { x: 6.5, y: 1.42 },
+              { x: 4.95, y: 0.52 },
+              { x: 4.5, y: 1.65 },
+            ],
+            backgroundColor: "rgb(255, 99, 132)",
+          },
+          {
+            type: "line",
+            label: "Trendline",
+            data: [
+              {
+                x: 0,
+                y: 0.215,
+              },
+
+              {
+                x: 13.999,
+                y: 5.058,
+              },
+            ],
+            fill: false,
+            borderColor: "rgba(255, 99, 132,0.5)",
+          },
+        ],
+      };
+
+      const config2 = {
+        type: "scatter",
+        data: data2,
+        options: {
+          plugins:{title: {
+              display: true,
+              text: "Relationship between Procrastination and Time spent on web",
+            },
+            tooltip: {
+              callbacks: {
+                footer: footer,
+              },
+            },
+            subtitle: {
+              display: true,
+              text: "Hover on points to see subjective remarks. ",
+            },},
+          scales: {
+            y: {
+              display: true,
+              title: {
+                display: true,
+                text: "Web-Based Procrastination (Hours)",
+              },
+            },
+            x: {
+              display: true,
+              title: {
+                display: true,
+                text: "Total Time Spent on Web (Hours)",
+              },
+            },
+          },
+        },
+      };
+      const mixedChart = new Chart(
+        document.getElementById("Analysis1"),
+        config2
+      );
+    </script>
+
+  <script>
+    const data3 = {
+      labels: [
+      'Web-Based Schoolwork',
+      'Personal Projects',
+      'Web-Based Procrastination'
+    ],
+    datasets: [{
+      label: 'My First Dataset',
+      data: [41.02, 20.74, 38.24],
+      backgroundColor: [
+        'rgb(255, 99, 132)',
+        'rgb(54, 162, 235)',
+        'rgb(255, 205, 86)'
+      ],
+      hoverOffset: 4
+    }]
+    };
+
+    const config3 = {
+      type: "doughnut",
+      data: data3,
+      options: {
+        plugins:{title: {
+            display: true,
+            text: "% of Total Web Browsing time spent on different categories",
+          },
+          subtitle: {
+            display: false,
+            text: "Click on colored rectangles below to show/hide data. Hover on points to see subjective remarks. ",
+          },},
+        scales: {
+        
+        },
+      },
+    };
+    const PieChart = new Chart(
+      document.getElementById("Analysis2"),
+      config3
+    );
+  </script>
+
+
+  <script>
+    const data4 = {
+      labels: dates,
+    datasets: [{
+      label: labels[2],
+      backgroundColor: "rgb(75, 192, 192)", //Green
+      borderColor: "rgb(75, 192, 192)",
+      cubicInterpolationMode: "monotone",
+      data: data_procrastination,
+    },
+    {
+      label: "Average",
+      backgroundColor: "rgba(75, 192, 192,0.2)", //Green
+      borderColor: "rgba(75, 192, 192,0.2)",
+      cubicInterpolationMode: "monotone",
+      data: [2.27,2.27,2.27,2.27,2.27,2.27,2.27,2.27,2.27,2.27,2.27,2.27,2.27,2.27,2.27,2.27,2.27,2.27,2.27,2.27,2.27,2.27,2.27,2.27,2.27,2.27,2.27,2.27] ,
+    }]
+    };
+
+    const config4 = {
+      type: "line",
+      data: data4,
+      options: {
+        plugins:{title: {
+            display: true,
+            text: "Web-Based Procrastination Trend",
+          },
+          tooltip: {
+                callbacks: {
+                  footer: footer,
+                },
+              },
+          subtitle: {
+            display: true,
+            text: "Hover on points to see subjective remarks. ",
+          },},
+        scales: {
+          y: {
+                display: true,
+                title: {
+                  display: true,
+                  text: "Number of Hours",
+                },
+              },
+              x: {
+                display: true,
+                title: {
+                  display: true,
+                  text: "Date",
+                },
+              },
+        },
+      },
+    };
+    const Procrastination3 = new Chart(
+      document.getElementById("Analysis3"),
+      config4
+    );
+  </script>
+
+
+<script>
+  const data5 = {
+    labels: [""],
+    datasets: [
+      {
+        type: "scatter",
+        label: "Total Time Worked (Pomodoro Sessions in hours)	vs Subjective Score",
+        data: [
+        {x: 1.25,y:4,},
+        {x: 8.75,y:10,},
+        {x: 5.00,y:2,},
+        {x: 4.58,y:8,},
+        {x: 0.00,y:1,},
+        {x: 5.83,y:6,},
+        {x: 2.50,y:1,},
+        {x: 4.17,y:8,},
+        {x: 3.75,y:5,},
+        {x: 5.42,y:9,},
+        {x: 1.67,y:2,},
+        {x: 5.42,y:6,},
+        {x: 6.67,y:10,},
+        {x: 5.00,y:10,},
+        {x: 0.00,y:2,},
+        {x: 0.00,y:3,},
+        {x: 6.25,y:8,},
+        {x: 8.33,y:2,},
+        {x: 1.67,y:4,},
+        {x: 1.25,y:5,},
+        {x: 2.92,y:9,},
+        {x: 0.42,y:8,},
+        {x: 1.67,y:2,},
+        {x: 1.25,y:2,},
+        {x: 3.33,y:8,},
+        {x: 2.92,y:7,},
+        {x: 4.58,y:10,},
+        {x: 3.75,y:4},
+        ],
+        backgroundColor: "rgb(54, 162, 235)",
+      },
+      {
+        type: "line",
+        label: "Trendline",
+        data: [
+          {
+            x: 0,
+            y: 3.292,
+          },
+
+          {
+            x: 10,
+            y: 10.4,
+          },
+        ],
+        fill: false,
+        borderColor: "rgba(54, 162, 235,0.5)",
+      },
+    ],
+  };
+
+  const config5 = {
+    type: "scatter",
+    data: data5,
+    options: {
+      plugins:{title: {
+          display: true,
+          text: "Relationship between Total Time Worked (Pomodoro Sessions in hours) and Subjective Score",
+        },
+        tooltip: {
+                callbacks: {
+                  footer: footer,
+                },
+              },
+        subtitle: {
+          display: true,
+          text: "Hover on points to see subjective remarks. ",
+        },},
+      scales: {
+        y: {
+          display: true,
+          title: {
+            display: true,
+            
+            text: "Subjective Score",
+          },
+        },
+        x: {
+          display: true,
+          title: {
+            display: true,
+            text: "Total Time Worked (Pomodoro Sessions in hours)",
+          },
+        },
+      },
+    },
+  };
+  const subjective_chart = new Chart(
+    document.getElementById("Analysis4"),
+    config5
+  );
+</script>
+
+
+
+
+<script>
+
+  const data_most_visited = {
+    labels: ["Facebook","Academic","Google Search","Google Docs","Email","YouTube","Coding"],
+    datasets: [{
+      label: 'Number of Hours',
+      data: [24.05, 19.4, 13.23, 9.65, 9.5, 8.43,7.33],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.2)',
+        'rgba(255, 159, 64, 0.2)',
+        'rgba(255, 205, 86, 0.2)',
+        'rgba(75, 192, 192, 0.2)',
+        'rgba(54, 162, 235, 0.2)',
+        'rgba(153, 102, 255, 0.2)',
+        'rgba(201, 203, 207, 0.2)'
+      ],
+      borderColor: [
+        'rgb(255, 99, 132)',
+        'rgb(255, 159, 64)',
+        'rgb(255, 205, 86)',
+        'rgb(75, 192, 192)',
+        'rgb(54, 162, 235)',
+        'rgb(153, 102, 255)',
+        'rgb(201, 203, 207)'
+      ],
+      borderWidth: 1
+    }]
+  };
+
+  const config_most_visited = {
+    type: 'bar',
+    data: data_most_visited,
+    options: {
+      plugins:{
+        title: {
+          display: true,
+          text: "Top 7 Website Categories which I spend my time the most over 28 days",
+        },
+      },
+      scales: {
+        y: {
+                display: true,
+                title: {
+                  display: true,
+                  text: "Number of Hours",
+                },
+              },
+              x: {
+                display: true,
+                title: {
+                  display: true,
+                  text: "Website/Category",
+                },
+              },
+      }
+    },
+  };
+  const most_visited_chart = new Chart(
+    document.getElementById("Analysis0"),
+    config_most_visited
+  );
+</script>
+
   </body>
 </html>
