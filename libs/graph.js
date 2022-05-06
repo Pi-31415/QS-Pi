@@ -146,12 +146,11 @@ const raw_data = {
     {
       name: "The Viewers’ Influence",
       group: "2",
-      image:
-        "https://static.wikia.nocookie.net/marvel_dc/images/e/ef/Red_Lantern_Corps_004.jpg",
+      image: "https://ak.picdn.net/shutterstock/videos/11487176/thumb/1.jpg",
       type: "Theme",
       author: "Detti Kis",
       date: "4/22/2022, 12:50:58 AM",
-      text: "\"So if it happened in real life, and Penny came up to me like, ‘Oh I'm Penny, your friend, I don't want kids’, then suddenly she comes up to me, ’Okay, I'm pregnant now’. And I'm like, ‘are you okay?’ And she's like, ‘Yeah, I'm happy about it’. Like, ‘because of the hormones that went to my head, I realized that this actually makes me happy. And I changed my mind’. And that's my new kind of way of thinking about it. That's the thing I can accept. But when it's a character in a series, who was like by the viewers expecting to get pregnant, like this is similar to Robin's case, in the end of How I Met Your Mother, like they expected her to get together with Ted, so they killed off Ted's wife and somehow she's like living this family life that she never wanted with Ted and his children now. This is the same thing. The viewers wanted her to get pregnant, and they couldn't accept like, for me, it was the biggest power move. I was like, okay, Penny stood up for herself and she doesn't want kids and she can still live her life to the fullest. She's developing her career. She's there for her friends like her family consists of her friends, her father and mother and brother and her friends' future children, but not her own. I was like, this is completely like totally something I am happy with for this character. And then they ruined it, probably because of the viewers not accepting that a woman can be happy without children. That's what's bothering me. In a real life situation. I could accept Penny's opinion if she changes it, but I think it wasn't that the character changed her opinion. It was like the viewers didn't like her not being pregnant.\" (<a href=\"https://a-collective-gaze.vercel.app/transcript_detti.html\" target=\"_blank\">transcript</a>)",
+      text: "\"So if it happened in real life, and Penny came up to me like, ‘Oh I'm Penny, your friend, I don't want kids’, then suddenly she comes up to me, ",
       x: 657.4462597887446,
       y: 253.1730732038883,
       index: 3,
