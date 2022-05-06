@@ -430,8 +430,6 @@
               <br />
               <dt><a href="#6">6. Final Thoughts</a></dt>
               <dd>-Personal Thoughts</dd>
-              <dd>-How Platform Economy Uses Me</dd>
-              <dd>-What is Missing</dd>
               <dd>-Further Analysis</dd>
               <br />
             </dl>
@@ -669,8 +667,30 @@
                     target="_blank"
                     >Uber Help</a
                   >
-                  page.
+                  page. Nevertheless, I know that this is not all the data Uber
+                  has about me, because this data is only the data which I
+                  submitted when filling out the account registration form, plus
+                  the trip data which Uber automatically generated. There must
+                  be the data that Uber has process further than this for
+                  marketing purposes, or to use my data with the rest of other
+                  passengers' data to predict the traffic flow, consumer
+                  behaviour.etc. However, this kind of high-level data is not
+                  included in the downloaded data. Uber did not deny keeping
+                  these data secret. On their website, they explicitly states
+                  the following about our data downloads.
                 </p>
+                <blockquote>
+                  “Some information is reasonably not included in your data
+                  download. This can be for security reasons or
+                  <b>because the information is proprietary</b>. ”
+                  <br />
+                  ―
+                  <a
+                    href="https://help.uber.com/riders/article/whats-in-your-data-download?nodeId=3d476006-87a4-4404-ac1e-216825414e05"
+                    target="_blank"
+                    >Uber Help</a
+                  >
+                </blockquote>
               </div>
             </section>
 
@@ -683,7 +703,7 @@
                 <p>
                   <span class="firstcharacter">S</span>ample data from two of
                   the most important csv files which I am going to visualize and
-                  analyze is shown below. Important personal information
+                  analyze are shown below. Important personal information
                   specific to me is replaced with xx for privacy protection.
                 </p>
                 <p>
@@ -691,7 +711,11 @@
                   <span style="font-family: monospace">trips_data.csv</span>,
                   which contains information about the taxi trips I have booked,
                   including the start location, end location, price, distance,
-                  and addresses.
+                  and addresses. One inconsistent thing about this data is that
+                  for the taxi trips I have cancelled, the Begin Trip Time is
+                  stated as 1st Jan 1970. This might be a convention used for
+                  non-existing dates, but made the data analysis harder.
+                  Luckily, I have ignored or corrected this data in processing.
                 </p>
               </div>
             </section>
@@ -749,9 +773,19 @@
                 </tbody>
               </table>
             </div>
-            <!-- Data Sample -->
-
-            <!-- Communications Sample -->
+            <section>
+              <!-- Data Sample -->
+              <p>
+                The next csv data sample is
+                <span style="font-family: monospace"
+                  >communications_sent-0.csv</span
+                >, which contains the messages sent from me to the Uber drivers,
+                and timestamps as follows. The subject field is empty in this
+                data file. This only contains the messages I sent out to the
+                Uber drivers, but does not include the incoming messages to me.
+              </p>
+              <!-- Communications Sample -->
+            </section>
             <div>
               <table>
                 <thead>
@@ -927,46 +961,6 @@
               </header>
               <div class="content">
                 <p><span class="firstcharacter">T</span>asdf</p>
-              </div>
-            </section>
-          </div>
-
-          <div class="index align-left">
-            <!-- Text -->
-            <section>
-              <header>
-                <h3>Heading</h3>
-              </header>
-              <div class="content">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </p>
-
-                <blockquote>
-                  “Some information is reasonably not included in your data
-                  download. This can be for security reasons or
-                  <b>because the information is proprietary</b>. ”
-                  <br />
-                  ―
-                  <a
-                    href="https://help.uber.com/riders/article/whats-in-your-data-download?nodeId=3d476006-87a4-4404-ac1e-216825414e05"
-                    target="_blank"
-                    >Uber Help</a
-                  >
-                </blockquote>
-
-                <a
-                  href="https://www.uber.com/legal/en/document/?country=united-states&lang=en&name=privacy-notice"
-                  target="_blank"
-                  >Uber Privacy Notice</a
-                >
               </div>
             </section>
           </div>
