@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "name": "Identification",
+      "group": "2",
+      "image": "None",
+      "type": "Theme",
+      "author": "Victoria Zhu",
+      "date": "4/19/2022, 7:10:41 PM",
+      "text": "\"In many ways, when I started watching the show, there were some moments in which…  there were lines… regarding the idea of what a woman is, or what it means to be a woman that I didn't know, or I didn't ever think about… this kind of was one of those moments for me as well. Because, on one hand, like, I'd like to think that I'm not transphobic, and I wouldn't feel threatened by their presence, and that I'm rooting for the better side. But on the other hand, it seems as if the way in which they discussed if femininity is inherent or earned, kind of, it doesn't go against, but it challenges me as someone who is a cisgendered woman… to think about what rights I have to consider myself a woman and what are, you know, potential ways in which I have created barriers for other trans people within the communities that I'm in and also just in general. So I think that in some ways… the clip kind of highlights one of those tense moments and it implored me to think about those things.\" (<a href=\"https://a-collective-gaze.vercel.app/transcript_victoria.html\" target=\"_blank\">transcript</a>)",
+      "x": 658.3652350373425,
+      "y": 510.506157631772,
+      "index": 0,
+      "weight": 5,
+      "px": 658.413136065141,
+      "py": 510.31828421295666,
+      "fixed": false
+    },
+    {
+      "name": "Femininity",
+      "group": "2",
+      "image": "None",
+      "type": "Theme",
+      "author": "Isabel Ríos",
+      "date": "4/19/2022, 7:11:17 PM",
+      "text": "\"I think… it sort of expands the ideas of what femininity can be… and rejects certain constraints of what it should be… I think that's what I also appreciate about the clip.\" (<a href=\"https://a-collective-gaze.vercel.app/transcript_victoria.html\" target=\"_blank\">transcript</a>)",
+      "x": 625.2050850789499,
+      "y": 618.635188773819,
+      "index": 1,
+      "weight": 4,
+      "px": 625.2037487886545,
+      "py": 618.3527260012468,
+      "fixed": 0
+    },
+    {
+      "name": "Different Perspective Through Social Media",
+      "group": "2",
+      "image": "None",
+      "type": "Theme",
+      "author": "Isabel Ríos",
+      "date": "4/19/2022, 7:13:07 PM",
+      "text": "\"I think I relate to… your experience with… analyzing what’s… given as default… to certain women… What comes to my mind is something that I heard in…the podcast Unladylike, a while back… they were talking about… body hair, and how so many women go through, like, ‘Oh, I'm gonna let my hair from my armpits… grow’... There was the whole trend of… posting it with… colorful tints on social media. But then… [a trans woman] was explaining how… for her, sort of the removal of hair, and like, shaving… meant that she was able to sort of be feminine and different in like… a way that is considered to be feminine… So that was… a point of access to femininity… To me, it was sort of like the shock moment of like, oh, shit… our heads are turned one way… Once I got like a feminist awakening of the first degree, if you will… not really like, deep or anything… I was like, ‘ah, it sucks that like, we have to shave’... whereas… in the case of this person, it was kind of like, ‘Oh, I'm so happy that I get to shave and sort of showcase my femininity in that way’.\" (<a href=\"https://a-collective-gaze.vercel.app/transcript_victoria.html\" target=\"_blank\">transcript</a>)",
+      "x": 640.0955305050945,
+      "y": 543.0844275345219,
+      "index": 2,
+      "weight": 3,
+      "px": 640.1597285639302,
+      "py": 542.851391235965,
+      "fixed": 0
+    },
+    {
+      "name": "The Viewers’ Influence",
+      "group": "2",
+      "image": "None",
+      "type": "Theme",
+      "author": "Detti Kis",
+      "date": "4/22/2022, 12:50:58 AM",
+      "text": "\"So if it happened in real life, and Penny came up to me like, ‘Oh I'm Penny, your friend, I don't want kids’, then suddenly she comes up to me, ’Okay, I'm pregnant now’. And I'm like, ‘are you okay?’ And she's like, ‘Yeah, I'm happy about it’. Like, ‘because of the hormones that went to my head, I realized that this actually makes me happy. And I changed my mind’. And that's my new kind of way of thinking about it. That's the thing I can accept. But when it's a character in a series, who was like by the viewers expecting to get pregnant, like this is similar to Robin's case, in the end of How I Met Your Mother, like they expected her to get together with Ted, so they killed off Ted's wife and somehow she's like living this family life that she never wanted with Ted and his children now. This is the same thing. The viewers wanted her to get pregnant, and they couldn't accept like, for me, it was the biggest power move. I was like, okay, Penny stood up for herself and she doesn't want kids and she can still live her life to the fullest. She's developing her career. She's there for her friends like her family consists of her friends, her father and mother and brother and her friends' future children, but not her own. I was like, this is completely like totally something I am happy with for this character. And then they ruined it, probably because of the viewers not accepting that a woman can be happy without children. That's what's bothering me. In a real life situation. I could accept Penny's opinion if she changes it, but I think it wasn't that the character changed her opinion. It was like the viewers didn't like her not being pregnant.\" (<a href=\"https://a-collective-gaze.vercel.app/transcript_detti.html\" target=\"_blank\">transcript</a>)",
+      "x": 772.1337428364983,
+      "y": 258.19100370341187,
+      "index": 73,
+      "weight": 3,
+      "px": 772.0387830873834,
+      "py": 258.27059567864524,
+      "fixed": 0
+    }
+  ],
+  "links": [
+    { "source": 10, "target": 8 },
+    { "source": 10, "target": 3 }
+  ]
+}

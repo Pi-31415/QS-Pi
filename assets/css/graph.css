@@ -1,0 +1,167 @@
+marker#child {
+  /* Uncomment alpha if you need the arrow */
+  fill: rgba(153, 153, 153, 0);
+}
+
+g.node circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+g.node:hover circle {
+  fill: #bf6f7e;
+  cursor: pointer;
+}
+
+g.node.selected circle {
+  fill: red;
+  stroke-width: 1.5px;
+}
+
+g.node.selected_target circle {
+  fill: pink;
+  stroke-width: 1.5px;
+}
+
+g.node text,
+g.node a {
+  pointer-events: none;
+  font: 10px sans-serif;
+  fill: #fff;
+  /* Text Outline */
+  text-shadow: 0 3px 0 #333740, 3px 0 0 #333740, 0 -3px 0 #333740,
+    -3px 0 0 #333740;
+}
+
+line.link {
+  stroke: #999;
+  stroke-opacity: 1;
+  stroke-width: 3px;
+}
+
+line.new_line {
+  stroke: yellow;
+  stroke-opacity: 1;
+  stroke-width: 3px;
+}
+
+line.selected {
+  stroke: red;
+  stroke-opacity: 1;
+}
+
+rect {
+  fill: #000;
+}
+
+#chart {
+  background-color: #000;
+  margin: 0px;
+  padding: 0px;
+}
+.columnContainerRight {
+  float: left;
+  width: 30%;
+}
+
+.columnContainerLeft {
+  float: left;
+  width: 70%;
+}
+
+/* Clear floats after the columns */
+.rowContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* Related to the input form */
+#contentForm {
+  z-index: 999;
+  position: absolute;
+  width: 500px;
+  top: 10px;
+  left: 10px;
+}
+
+/*Toast*/
+
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #d32f2f; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1000000; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}

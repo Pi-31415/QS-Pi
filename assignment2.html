@@ -384,6 +384,122 @@
           <h2>Assignment 2</h2>
           <p>Subtitle to Assignment</p>
           <div class="index align-left">
+            <!-- Data Sample -->
+            <div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>City</th>
+                    <th>Request Time</th>
+                    <th>Begin Trip Time</th>
+                    <th>Begin Trip Lat</th>
+                    <th>Begin Trip Lng</th>
+                    <th>Begin Trip Address</th>
+                    <th>Dropoff Time</th>
+                    <th>Dropoff Lat</th>
+                    <th>Dropoff Lng</th>
+                    <th>Dropoff Address</th>
+                    <th>Distance (miles)</th>
+                    <th>Fare Amount</th>
+                    <th>Fare Currency</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td align="right">196</td>
+                    <td>2022-03-27 09:19:10</td>
+                    <td>2022-03-27 09:28:24</td>
+                    <td align="right">xx</td>
+                    <td align="right">xx</td>
+                    <td>xx</td>
+                    <td>2022-03-27 09:48:45</td>
+                    <td align="right">xx</td>
+                    <td align="right">xx</td>
+                    <td>xx</td>
+                    <td align="right">xx</td>
+                    <td align="right">46.56</td>
+                    <td>AED</td>
+                  </tr>
+                  <tr>
+                    <td align="right">196</td>
+                    <td>2022-03-27 08:41:40</td>
+                    <td>2022-03-27 08:52:51</td>
+                    <td align="right">xx</td>
+                    <td align="right">xx</td>
+                    <td>xx</td>
+                    <td>2022-03-27 09:10:25</td>
+                    <td align="right">xx</td>
+                    <td align="right">xx</td>
+                    <td>xx</td>
+                    <td align="right">xx</td>
+                    <td align="right">41.95</td>
+                    <td>AED</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Data Sample -->
+
+            <!-- Communications Sample -->
+            <div>
+              <table>
+                <thead>
+                  <tr>
+                    <th title="Field #1">Time</th>
+                    <th title="Field #2">Subject</th>
+                    <th title="Field #3">Content</th>
+                    <th title="Field #4">Medium</th>
+                    <th title="Field #5">Direction</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2022-02-25 05:12:55</td>
+                    <td></td>
+                    <td>I cannot see you</td>
+                    <td>intercom_text</td>
+                    <td>out</td>
+                  </tr>
+                  <tr>
+                    <td>2022-02-25 05:12:55</td>
+                    <td></td>
+                    <td>I cannot see you</td>
+                    <td>intercom_text</td>
+                    <td>out</td>
+                  </tr>
+                  <tr>
+                    <td>2022-02-25 05:11:28</td>
+                    <td></td>
+                    <td>Yes</td>
+                    <td>intercom_text</td>
+                    <td>out</td>
+                  </tr>
+                  <tr>
+                    <td>2022-02-25 05:11:28</td>
+                    <td></td>
+                    <td>Yes</td>
+                    <td>intercom_text</td>
+                    <td>out</td>
+                  </tr>
+                  <tr>
+                    <td>2022-02-25 05:10:36</td>
+                    <td></td>
+                    <td>Coming</td>
+                    <td>intercom_text</td>
+                    <td>out</td>
+                  </tr>
+                  <tr>
+                    <td>2022-02-25 05:10:36</td>
+                    <td></td>
+                    <td>Coming</td>
+                    <td>intercom_text</td>
+                    <td>out</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Communications Sample -->
+
             <!-- Text -->
             <section>
               <header>
@@ -400,6 +516,69 @@
                   cupidatat non proident, sunt in culpa qui officia deserunt
                   mollit anim id est laborum.
                 </p>
+
+                <blockquote>
+                  “Some information is reasonably not included in your data
+                  download. This can be for security reasons or
+                  <b>because the information is proprietary</b>. ”
+                  <br />
+                  ―
+                  <a
+                    href="https://help.uber.com/riders/article/whats-in-your-data-download?nodeId=3d476006-87a4-4404-ac1e-216825414e05"
+                    target="_blank"
+                    >Uber Help</a
+                  >
+                </blockquote>
+
+                <a
+                  href="https://www.uber.com/legal/en/document/?country=united-states&lang=en&name=privacy-notice"
+                  target="_blank"
+                  >Uber Privacy Notice</a
+                >
+
+                <!--Uber Request image starts -->
+                <span class="image fit"
+                  ><img src="images/uber_request.png" alt="Uber Files"
+                /></span>
+                <p style="text-align: center">
+                  Figure : Requesting User Data from Uber
+                </p>
+                <!--Uber Request image ends -->
+
+                <p>asdfsadfsdf</p>
+
+                <!-- Word cloud image starts -->
+                <span class="image fit"
+                  ><img
+                    src="images/a_2_cloud.png"
+                    style="width: 60%; margin-left: auto; margin-right: auto"
+                    alt="Word Cloud"
+                /></span>
+                <p style="text-align: center">
+                  Figure : Most frequent words from my Uber chats
+                </p>
+                <!-- Word cloud image ends -->
+
+                <div>
+                  <canvas id="DistanceAnalysis"></canvas>
+                </div>
+
+                <div>
+                  <canvas id="Analysis3"></canvas>
+                </div>
+
+                <!--Uber Files image starts -->
+                <span class="image fit"
+                  ><img src="images/uber_files.png" alt="Uber Files"
+                /></span>
+                <p style="text-align: center">
+                  Figure : Files extracted from Uber Data Zip File
+                </p>
+                <!-- Uber Files image ends -->
+
+                <div>
+                  <canvas id="LatLongAnalysis"></canvas>
+                </div>
               </div>
             </section>
           </div>
@@ -512,5 +691,260 @@
     <script src="assets/js/main.js"></script>
     <!-- Note: Only needed for demo purposes. Delete for production sites. -->
     <script src="assets/js/demo.js"></script>
+
+    <script>
+      // Distance Analysis
+      const distance_analysis_data = {
+        labels: [
+          "2022-03-27 09:19:10",
+          "2022-03-27 08:41:40",
+          "2022-03-26 09:11:33",
+          "2022-03-20 07:10:53",
+          "2022-03-20 06:18:32",
+          "2022-03-19 11:41:08",
+          "2022-03-19 10:56:30",
+          "2022-03-19 10:10:42",
+          "2022-02-25 05:01:57",
+          "2022-02-04 11:55:19",
+          "2022-02-04 11:32:32",
+          "2022-02-04 08:41:35",
+          "2022-02-04 07:29:37",
+          "2022-01-13 08:53:30",
+          "2022-01-13 08:03:00",
+          "2022-01-13 06:58:25",
+          "2022-01-04 11:12:51",
+          "2022-01-04 09:43:48",
+          "2021-12-27 11:37:09",
+          "2021-12-27 06:54:42",
+          "2021-12-23 08:43:02",
+          "2021-12-23 08:30:23",
+        ],
+        datasets: [
+          {
+            label: "Distance (Miles)",
+            data: [
+              8.996384839, 7.700888014, 7.444525428, 6.591957804, 6.022920258,
+              6.285524716, 1.432887227, 7.375142775, 7.001694549, 14.43531071,
+              0, 20.60304171, 7.213925407, 7.147273071, 2.34013639, 6.307006641,
+              6.410023739, 6.334985868, 6.516945979, 6.901684432, 6.704285066,
+              0, 6.230439242, 7.726543892, 0,
+            ],
+            backgroundColor: ["rgba(255, 99, 132, 0.2)"],
+            borderColor: ["rgb(255, 99, 132)"],
+            borderWidth: 1,
+          },
+        ],
+      };
+
+      const config_distance_analysis = {
+        type: "bar",
+        data: distance_analysis_data,
+        options: {
+          plugins: {
+            title: {
+              display: true,
+              text: "Trip Distance Analysis",
+            },
+          },
+          scales: {
+            y: {
+              display: true,
+              title: {
+                display: true,
+                text: "Distance (Miles)",
+              },
+            },
+            x: {
+              display: true,
+              title: {
+                display: true,
+                text: "Trip Number",
+              },
+            },
+          },
+        },
+      };
+      const most_visited_chart = new Chart(
+        document.getElementById("DistanceAnalysis"),
+        config_distance_analysis
+      );
+    </script>
+
+    <!--Analysis Charts-->
+    <script>
+      //Code for subjective data
+      const footer = (tooltipItems) => {
+        return "Normalized Drop Off Coordinates";
+      };
+
+      const data2 = {
+        labels: [""],
+        datasets: [
+          {
+            type: "scatter",
+            label: "Normalized Longitude and Latitude of Drop Off Locations",
+            data: [
+              { x: 0.9979267266217433, y: 0.995438016820705 },
+              { x: 0.9996759236461437, y: 0.996782712942784 },
+              { x: 0.9999905834417936, y: 0.9958337364998427 },
+              { x: 0.9985980334639205, y: 0.9956841833938956 },
+              { x: 0.9996685453039992, y: 0.9967876571497885 },
+              { x: 0.9985966474769983, y: 0.9956887247395886 },
+              { x: 0.9983731774679616, y: 0.9954597347077692 },
+              { x: 0.9996776357476356, y: 0.9967820903389389 },
+              { x: 1.0, y: 0.9958343041680544 },
+              { x: 0.9983187570991067, y: 1.0 },
+              { x: 0.9982986602887353, y: 0.99984233473219 },
+              { x: 0.9981334832590717, y: 0.9954652648948631 },
+              { x: 0.9996732332009418, y: 0.996782896061562 },
+              { x: 0.9983735035825316, y: 0.9954683412903326 },
+              { x: 0.9986153990647687, y: 0.99584911847719 },
+              { x: 0.999676005174786, y: 0.9967832073634845 },
+              { x: 0.9986081430155881, y: 0.9958363550983674 },
+              { x: 0.9996881121781942, y: 0.9967750952016214 },
+              { x: 0.9986083876015155, y: 0.9958472872894106 },
+              { x: 0.9996811414792623, y: 0.9967754431272996 },
+              { x: 0.9984617175736946, y: 0.9956999682325544 },
+              { x: 0.998504601639639, y: 0.9958574870053422 },
+              { x: 0.9997116739558709, y: 0.9967646940550342 },
+              { x: 0.9999906649704362, y: 0.9958355676876222 },
+              { x: 0.9994190268936902, y: 0.9960967500006044 },
+            ],
+            backgroundColor: "rgb(255, 99, 132)",
+          },
+        ],
+      };
+
+      const config2 = {
+        type: "scatter",
+        data: data2,
+        options: {
+          plugins: {
+            title: {
+              display: true,
+              text: "Normalized Longitude and Latitude of Drop Off Locations",
+            },
+            tooltip: {
+              callbacks: {
+                footer: footer,
+              },
+            },
+          },
+          scales: {
+            y: {
+              display: true,
+              title: {
+                display: true,
+                text: "Normalized Longitude",
+              },
+            },
+            x: {
+              display: true,
+              title: {
+                display: true,
+                text: "Normalized Latitude",
+              },
+            },
+          },
+        },
+      };
+      const mixedChart = new Chart(
+        document.getElementById("LatLongAnalysis"),
+        config2
+      );
+    </script>
+
+    <script>
+      const data_procrastination = [
+        5.175412217, 5.447423715, 5.167555726, 5.426309006, 5.708194451,
+        5.71153589, 11.86415768, 5.368031672, 5.487243085, 4.6102229,
+        4.456623507, 5.822072953, 5.512591951, 8.879824307, 5.397172056,
+        5.302632468, 5.750604778, 5.637610028, 5.669630419, 5.835074078,
+        5.82623449, 5.987152943,
+      ];
+      const data4 = {
+        labels: [
+          "2022-03-27 09:19:10",
+          "2022-03-27 08:41:40",
+          "2022-03-26 09:11:33",
+          "2022-03-20 07:10:53",
+          "2022-03-20 06:18:32",
+          "2022-03-19 11:41:08",
+          "2022-03-19 10:56:30",
+          "2022-03-19 10:10:42",
+          "2022-02-25 05:01:57",
+          "2022-02-04 11:55:19",
+          "2022-02-04 11:32:32",
+          "2022-02-04 08:41:35",
+          "2022-02-04 07:29:37",
+          "2022-01-13 08:53:30",
+          "2022-01-13 08:03:00",
+          "2022-01-13 06:58:25",
+          "2022-01-04 11:12:51",
+          "2022-01-04 09:43:48",
+          "2021-12-27 11:37:09",
+          "2021-12-27 06:54:42",
+          "2021-12-23 08:43:02",
+          "2021-12-23 08:30:23",
+        ],
+        datasets: [
+          {
+            label: "Price Per Mile",
+            backgroundColor: "rgb(75, 192, 192)", //Green
+            borderColor: "rgb(75, 192, 192)",
+            cubicInterpolationMode: "monotone",
+            data: data_procrastination,
+          },
+          {
+            label: "Average",
+            backgroundColor: "rgba(75, 192, 192,0.2)", //Green
+            borderColor: "rgba(75, 192, 192,0.2)",
+            cubicInterpolationMode: "monotone",
+            data: [
+              5.91, 5.91, 5.91, 5.91, 5.91, 5.91, 5.91, 5.91, 5.91, 5.91, 5.91,
+              5.91, 5.91, 5.91, 5.91, 5.91, 5.91, 5.91, 5.91, 5.91, 5.91, 5.91,
+            ],
+          },
+        ],
+      };
+
+      const config4 = {
+        type: "line",
+        data: data4,
+        options: {
+          plugins: {
+            title: {
+              display: true,
+              text: "How much Uber charge me per mile",
+            },
+            tooltip: {
+              callbacks: {
+                footer: footer,
+              },
+            },
+          },
+          scales: {
+            y: {
+              display: true,
+              title: {
+                display: true,
+                text: "Price per mile (United Arab Emirates dirham)",
+              },
+            },
+            x: {
+              display: true,
+              title: {
+                display: true,
+                text: "Date",
+              },
+            },
+          },
+        },
+      };
+      const Procrastination3 = new Chart(
+        document.getElementById("Analysis3"),
+        config4
+      );
+    </script>
   </body>
 </html>

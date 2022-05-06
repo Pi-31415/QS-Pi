@@ -101,7 +101,6 @@
       sizes="16x16"
       href="./favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="./favicon/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
@@ -140,21 +139,21 @@
         max-width: 1000px;
         margin: 0 auto;
       }
-      nav {
+      .mindmapnav {
         float: right;
         font-family: sans-serif;
       }
-      nav ul {
+      .mindmapnav ul {
         list-style: none;
         margin: 0;
         padding: 0;
       }
-      nav ul li {
+      .mindmapnav ul li {
         float: left;
         position: relative;
       }
-      nav ul li a,
-      nav ul li a:visited {
+      .mindmapnav ul li a,
+      .mindmapnav ul li a:visited {
         display: block;
         padding: 0 20px;
         line-height: 70px;
@@ -162,20 +161,20 @@
         color: #fff;
         text-decoration: none;
       }
-      nav ul li a:hover,
-      nav ul li a:visited:hover {
+      .mindmapnav ul li a:hover,
+      .mindmapnav ul li a:visited:hover {
         background: #41b883;
         color: #fff;
       }
-      nav ul li a:not(:only-child):after,
-      nav ul li a:visited:not(:only-child):after {
+      .mindmapnav ul li a:not(:only-child):after,
+      .mindmapnav ul li a:visited:not(:only-child):after {
         padding-left: 4px;
         content: " ▾";
       }
-      nav ul li ul li {
+      .mindmapnav ul li ul li {
         min-width: 190px;
       }
-      nav ul li ul li a {
+      .mindmapnav ul li ul li a {
         padding: 15px;
         line-height: 20px;
       }
@@ -200,21 +199,21 @@
         .nav-mobile {
           display: block;
         }
-        nav {
+        .mindmapnav {
           width: 100%;
           padding: 70px 0 15px;
         }
-        nav ul {
+        .mindmapnav ul {
           display: none;
         }
-        nav ul li {
+        .mindmapnav ul li {
           float: none;
         }
-        nav ul li a {
+        .mindmapnav ul li a {
           padding: 15px;
           line-height: 20px;
         }
-        nav ul li ul li a {
+        .mindmapnav ul li ul li a {
           padding-left: 30px;
         }
         .nav-dropdown {
@@ -287,22 +286,51 @@
         padding-top: 70px;
       }
     </style>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./assets/css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen:wght@800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+    <!-- Import graph related files -->
+    <script type="text/javascript" src="./libs/d3.v3.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="./assets/css/graph.css" />
     <script src="./libs/jquery.min.js"></script>
     <script src="./libs/chart.min.js"></script>
   </head>
 
   <body class="is-preload">
+
+    <div style="z-index: 1000000;position: fixed;
+    bottom: 10px;
+    left: 10px;
+    padding: 5px;
+    border: 1px solid #ffffff;">
+      <a class="waves-effect waves-light btn" href="#top"><i class="material-icons left">arrow_upward</i>Back to Top</a>
+      <a class="waves-effect waves-light btn" href="#mindmapdiv"><i class="material-icons left">arrow_downward</i>Go to Mindmap</a>
+    </div>
+    <span id="top"></span>
     <!--Navbar-->
     <section class="navigation" id="navbar">
       <div class="nav-container">
         <div class="brand">
           <img src="./images/logo.png" width="50px" style="padding-top: 10px" />
         </div>
-        <nav>
+        <div class="mindmapnav">
           <div class="nav-mobile">
             <a id="nav-toggle" href="#!"><span></span></a>
           </div>
@@ -353,7 +381,7 @@
               <a href="./sandbox.html">Sandbox</a>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
     </section>
 
@@ -406,49 +434,253 @@
         </div>
       </section>
 
-      <!-- Footer -->
-      <footer class="wrapper style1 align-center">
-        <div class="inner">
-          <ul class="icons">
-            <li>
-              <a
-                href="https://paingthet.com/"
-                target="_blank"
-                class="icon solid style2 fa-globe"
-                ><span class="label">Website</span></a
+      <!-- Mind Map -->
+      <span id="mindmapdiv"></span>
+      <div>
+        <div id="snackbar">Message</div>
+        <!-- Form -->
+        <div id="contentForm">
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-content">
+                <div style="text-align: right">
+                  <a href="#closeForm"><i class="material-icons right">close</i></a>
+                </div>
+                <span class="card-title"
+                  >Add your own thoughts, comments, and opinions.</span
+                >
+                <div class="row" style="margin-bottom: 0px">
+                  <form class="col s12" style="margin-bottom: 0px">
+                    <div class="row" style="margin-bottom: 0px">
+                      <div
+                        class="input-field col s6"
+                        style="margin-top: 30px;margin-bottom: 0px"
+                        id="nameField"
+                      >
+                        <input id="first_name" type="text" class="validate" />
+                        <label for="first_name">Name</label>
+                      </div>
+                      <div class="input-field col s6" style="margin-bottom: 0px">
+                        <!-- Dropdown Begin -->
+                        <div class="input-field col s12" style="margin-bottom: 0px;padding-left: 0px;">
+                          <select>
+                            <option value="1">Question</option>
+                            <option value="2">Theme</option>
+                            <option value="3">Media</option>
+                            <option value="4" selected>Comment / Opinion</option>
+                          </select>
+                          <label>Select Type of Content</label>
+                        </div>
+                        <!-- Dropdown End -->
+                      </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 0px">
+                      <div class="input-field col s12">
+                        <input id="title" type="text" class="validate" />
+                        <label for="title">Title</label>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 0px">
+                      <div class="input-field col s12" style="margin-bottom: 0px">
+                        <textarea
+                          id="textarea1"
+                          class="materialize-textarea"
+                        ></textarea>
+                        <label for="textarea1"
+                          >Thoughts, comments, and opinions</label
+                        >
+                        </div>
+                        <div class="preview">
+                          <img src="" id="imgPreview" width="100" height="100" />
+                        </div>
+                        <div class="input-field col s12" style="margin-bottom: 0px" id="imageUploadForm">
+                        <input id="imageURL" type="text" class="validate" />
+                        <label for="imageURL">Image URL</label>
+                        <p style="color: gray">
+                            *To add image, search an image on Google in new tab, and
+                            tap the track pad with your two fingers hard on the image
+                            chosen. Then select
+                            <b>Copy Image Address</b>, and paste the link above .<b
+                              >jpg, jpeg, webp and png</b
+                            >
+                            files only.
+                          </p>
+                    </div>
+                        
+                      </div>
+                      <div class="input-field col s12">
+                        <p>
+                          <label>
+                            <input type="checkbox" id="check" />
+                            <span>I wish to remain anonymous.</span>
+                          </label>
+                        </p>
+                      </div>
+                      <!-- File uplaod ends -->
+                      <div class="progress orange" id="uploadProgressbar">
+                        <div class="indeterminate"></div>
+                      </div>
+                      <a
+                        class="waves-effect waves-light btn-large orange"
+                        href="#Submit"
+                        ><i class="material-icons left">send</i>Submit</a
+                      >
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Floating Action Button -->
+        <div class="fixed-action-btn">
+          <a class="btn-floating btn-large orange" href="#OpenDialogue">
+            <i class="large material-icons">add</i>
+          </a>
+          <ul>
+            <!-- <li id="download">
+              <a class="btn-floating red" href="#SaveFile"
+                ><i class="material-icons">save</i></a
+              >
+            </li> -->
+            <li id="add">
+              <a class="btn-floating green" href="#openText"
+                ><i class="material-icons">edit</i></a
               >
             </li>
             <li>
-              <a
-                href="https://github.com/Pi-31415"
-                target="_blank"
-                class="icon brands style2 fa-github"
-                ><span class="label">Github</span></a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/piko31415"
-                target="_blank"
-                class="icon brands style2 fa-linkedin-in"
-                ><span class="label">LinkedIn</span></a
-              >
-            </li>
-            <li>
-              <a
-                href="mailto:pk2269@nyu.edu"
-                target="_blank"
-                class="icon style2 fa-envelope"
-                ><span class="label">Email</span></a
+              <a class="btn-floating blue" href="#openImage"
+                ><i class="material-icons">image</i></a
               >
             </li>
           </ul>
-          <p>
-            &copy; <span id="year"></span> by
-            <a href="https://paingthet.com/" target="_blank">Pi Ko</a>.
-          </p>
         </div>
-      </footer>
+        <!-- Two Column -->
+        <div class="rowContainer" style="background-color: #000">
+          <div class="columnContainerLeft">
+            <!-- Main Graph -->
+            <div id="chart"></div>
+          </div>
+          <div class="columnContainerRight">
+            <!-- Card -->
+            <div class="row" id="imageCard" style="padding-top: 100px;">
+              <div class="col" style="margin: 10px">
+                <div class="card" style="width: 320px">
+                  <div class="card-image" id="cardImageContainer">
+                    <img src="" id="cardImageSource" />
+                  </div>
+                  <div class="card-content">
+                    <div id="contentDisplay">
+                      <span class="card-title" id="titleText">Card Title</span>
+                      <div id="authorInfo" style="padding-bottom: 10px;">
+                        By
+                        <div class="chip">
+                          <img src="./img/avatar.png" alt="Contact Person" />
+                          <span id="contentAuthor">Name</span>
+                        </div>
+                        <!-- <span id="contentDate"></span> -->
+                        <!-- <hr
+                          style="
+                            height: 1px;
+                            border-width: 0;
+                            color: gray;
+                            background-color: gray;
+                          "
+                        /> -->
+                      </div>
+                      <p
+                        id="contentText"
+                        style="height: 350px; overflow: scroll; text-align: justify"
+                      ></p>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="./libs/FileSaver.min.js"></script>
+        <script type="text/javascript" src="./libs/graph.js"></script>
+        <script type="text/javascript" src="./libs/materialize.min.js"></script>
+        <script type="text/javascript">
+          //For floating action button
+          document.addEventListener("DOMContentLoaded", function () {
+            var elems = document.querySelectorAll(".fixed-action-btn");
+            var instances = M.FloatingActionButton.init(elems, {
+              direction: "top",
+            });
+          });
+        </script>
+        <!-- File Uploading Script -->
+        <script type="text/javascript">
+          //Checkbox change
+          $("#check").change(function () {
+            if ($(this).is(":checked")) {
+              //console.log($(this).val() + " is now checked");
+              $("#nameField").fadeOut();
+              $("#first_name").val("None");
+            } else {
+              //console.log($(this).val() + " is now unchecked");
+              $("#first_name").val("");
+              $("#nameField").fadeIn();
+              $("#first_name").focus();
+            }
+          });
+        
+          //Select change
+          $("select").on("change", function () {
+            localStorage.setItem("type", this.value);
+            if (localStorage.getItem("type") == 1) {
+              localStorage.setItem("typeName", "Question");
+            } else if (localStorage.getItem("type") == 2) {
+              localStorage.setItem("typeName", "Theme");
+            } else if (localStorage.getItem("type") == 3) {
+              localStorage.setItem("typeName", "Media");
+            } else if (localStorage.getItem("type") == 4) {
+              localStorage.setItem("typeName", "Comment/Opinion");
+            }
+          });
+        
+          //Image Handling
+          $("#imageURL").on("input", function(){
+            // Print entered value in a div box
+            var imageName = $(this).val();
+        
+            //Only dispaly if no errors
+        
+            var img = $("<img src='"+imageName+"' />");
+        
+            img.on('load', function(e){      
+                $("#imgPreview").attr("src", imageName);
+                $("#imgPreview").fadeIn(); // Display image element
+                localStorage.setItem("fileName", imageName);
+            }).on('error', function(e) {
+                showToast("Error loading Image. Try another.", 2);
+                console.log('ERROR Loading Image');
+            });
+        });
+        
+          $(document).ready(function () {
+            //Hide the form
+            $("#contentForm").hide();
+            //Reset document
+            localStorage.setItem("typeName", "Comment/Opinion");
+            localStorage.setItem("type", 4);
+            localStorage.setItem("fileName", "None");
+            // Enable Select
+            $("select").formSelect();
+            //Hide unnecessary elements
+            $("#uploadProgressbar").hide();
+            $("#imgPreview").hide();
+          });
+        
+        </script>
+        </div>
+
+      <!-- Footer -->
+     
     </div>
 
     <!-- Navbar Script... -->
@@ -476,13 +708,13 @@
       }
 
       //Put date in copyright
-      document.getElementById("year").innerHTML = new Date().getFullYear();
+      // document.getElementById("year").innerHTML = new Date().getFullYear();
       (function ($) {
         // Begin jQuery
         $(function () {
           // DOM ready
           // If a link has a dropdown, add sub menu toggle.
-          $("nav ul li a:not(:only-child)").click(function (e) {
+          $(".mindmapnav ul li a:not(:only-child)").click(function (e) {
             $(this).siblings(".nav-dropdown").slideToggle();
             // Close one dropdown when selecting another
             $(".nav-dropdown").not($(this).siblings()).hide();

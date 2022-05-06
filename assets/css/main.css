@@ -80,6 +80,7 @@ header,
 hgroup,
 menu,
 nav,
+.mindmapnav,
 output,
 ruby,
 section,
@@ -106,6 +107,7 @@ header,
 hgroup,
 menu,
 nav,
+.mindmapnav,
 section {
   display: block;
 }
