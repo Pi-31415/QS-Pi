@@ -147,7 +147,7 @@ const raw_data = {
       name: "The Viewers’ Influence",
       group: "2",
       image:
-        "https://static.wikia.nocookie.net/marvel_dc/images/e/ef/Red_Lantern_Corps_004.jpg/revision/latest/top-crop/width/360/height/360?cb=20091113215537",
+        "https://static.wikia.nocookie.net/marvel_dc/images/e/ef/Red_Lantern_Corps_004.jpg",
       type: "Theme",
       author: "Detti Kis",
       date: "4/22/2022, 12:50:58 AM",
