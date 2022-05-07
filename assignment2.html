@@ -426,11 +426,9 @@
               <br />
               <dt><a href="#5">5. Uber's Policies</a></dt>
               <dd>-Uber Privacy Notice</dd>
-              <dd>-What is missing</dd>
               <br />
               <dt><a href="#6">6. Final Thoughts</a></dt>
               <dd>-Personal Thoughts</dd>
-              <dd>-Further Analysis</dd>
               <br />
             </dl>
           </div>
@@ -705,6 +703,8 @@
                   the most important csv files which I am going to visualize and
                   analyze are shown below. Important personal information
                   specific to me is replaced with xx for privacy protection.
+                  Please note that the actual data downloaded is much larger
+                  than what is shown here.
                 </p>
                 <p>
                   The first csv file is
@@ -856,6 +856,15 @@
                 <h3>Uber Messages</h3>
               </header>
               <div class="content">
+                <p>
+                  <span class="firstcharacter">F</span>or the data obtained, I
+                  tried to make 4 different visualizations to extract the
+                  patterns and spatial trends. They are namely (1) the word
+                  cloud of most frequent words in my Uber messages, (2) Distance
+                  travelled in each trip, (3) Price per mile travelled and (4) a
+                  scatter plot of latitude and longitude for the locations I
+                  travelled to.
+                </p>
                 <!-- Word cloud image starts -->
                 <span class="image fit"
                   ><img
@@ -864,11 +873,22 @@
                     alt="Word Cloud"
                 /></span>
                 <p style="text-align: center">
-                  Figure : Most frequent words from my Uber chats
+                  Figure : Most frequent words from my Uber messages
                 </p>
                 <!-- Word cloud image ends -->
-
-                <p><span class="firstcharacter">T</span>asdf</p>
+                <p>
+                  The word cloud shown above is generated from
+                  communications_sent-0.csv file using an online tool called
+                  <a href="https://voyant-tools.org/" target="_blank"
+                    >voyant-tools</a
+                  >. This visualization selects the 25 most frequent words in my
+                  chat history with Uber drivers, and renders them into an
+                  infographic with the size of the word proportional to their
+                  frequency. According to the word cloud above, it appears that
+                  "coming" is the most used word. It is expected because that is
+                  what I send to every driver after they have arrived, to notify
+                  them that I am coming to the pick-up spot.
+                </p>
               </div>
             </section>
           </div>
@@ -885,7 +905,17 @@
                   <canvas id="DistanceAnalysis"></canvas>
                 </div>
 
-                <p><span class="firstcharacter">T</span>asdf</p>
+                <p>
+                  <span class="firstcharacter">I</span> also tried to plot the
+                  distance travelled (in miles) with the dates for each trip. It
+                  is found that for almost all the trips, I travel around 6-7
+                  miles per trip, with 2 very odd outliers (14 miles on 4 Feb
+                  and 20 miles on the same day. I only travel around the city if
+                  I need to do any administrative tasks (e.g. managing bank
+                  accounts, applying for visa). For most of the times, it seems
+                  that all my tasks in the city are within 6 to 7 miles of my
+                  residence.
+                </p>
               </div>
             </section>
           </div>
@@ -901,8 +931,19 @@
                 <div>
                   <canvas id="Analysis3"></canvas>
                 </div>
-
-                <p><span class="firstcharacter">T</span>asdf</p>
+                <p>
+                  <span class="firstcharacter">M</span>oreover, I also tried to
+                  plot the price per miles travelled of all the trips I have
+                  travelled to see if Uber is charging a fair price (or a
+                  consistent price). The result was very unexpected because I
+                  was expecting a consistent price for price per mile. However,
+                  it is found out that normally, Uber charges me at an average
+                  of 6 AED per mile. In only two days (19 March and 13 Jan), the
+                  prices are much higher (two or three times) than the average.
+                  Upon further analysis, I found out that on these days, I
+                  travelled for a very short distance. This might be the reason
+                  for price discrimination from Uber.
+                </p>
               </div>
             </section>
           </div>
@@ -919,7 +960,17 @@
                   <canvas id="LatLongAnalysis"></canvas>
                 </div>
 
-                <p><span class="firstcharacter">T</span>asdf</p>
+                <p>
+                  <span class="firstcharacter">I</span>n addition, I also
+                  plotted the latitude and longitude (normalized to protect
+                  privacy) of my dropoff locations into a scatter plot to see
+                  spatial information about my Uber taxi trips. It is found out
+                  that for most of the times, I have been taking Uber taxi to go
+                  to a particular location on the right side of the map
+                  (1,0.997). These are my trips back to my residence. For all
+                  other points, they are distributed across the map without a
+                  particular pattern (except at (0.999,0.996) and (1,0.996)).
+                </p>
               </div>
             </section>
           </div>
@@ -930,7 +981,18 @@
                 <h3>Key Takeaways</h3>
               </header>
               <div class="content">
-                <p><span class="firstcharacter">T</span>asdf</p>
+                <p>The key takeaways for my data visualizations are that</p>
+                <ul>
+                  <li>
+                    The most frequent word I say to my Uber drivers is "coming".
+                  </li>
+                  <li>I travel 6 miles per trip on average.</li>
+                  <li>Uber charges more for shorter trips.</li>
+                  <li>
+                    I always take a cab back to my residence whenever I go out
+                    with taxi.
+                  </li>
+                </ul>
               </div>
             </section>
           </div>
@@ -945,7 +1007,27 @@
                 <h3>Uber Privacy Notice</h3>
               </header>
               <div class="content">
-                <p><span class="firstcharacter">T</span>asdf</p>
+                <p>
+                  <span class="firstcharacter">A</span>ccording to
+                  <a
+                    href="https://www.uber.com/legal/en/document/?country=united-states&lang=en&name=privacy-notice"
+                    target="_blank"
+                    >Uber Privacy Notice</a
+                  >, it states that
+                  <i
+                    >"Uber does not sell or share user personal data with third
+                    parties for their direct marketing, except with users'
+                    consent."</i
+                  >
+                  However, we have no good way of verifying this. In the same
+                  document, it is stated that
+                  <i
+                    >"Uber may share a user's personal data other than as
+                    described in this notice if we notify the user and they
+                    consent to the sharing." </i
+                  >. The statement is written in very vague terms so that it is
+                  highly questionable whether Uber does not sell the data.
+                </p>
               </div>
             </section>
           </div>
@@ -960,9 +1042,22 @@
                 <h3>Personal Thoughts</h3>
               </header>
               <div class="content">
-                <p><span class="firstcharacter">T</span>asdf</p>
+                <p>
+                  I do think that I gained a lot more knowledge about platform
+                  economy from this assignment activity and what kind of
+                  personal data these big companies really hold. However, since
+                  they are only showing the data which we have given them, and
+                  not showing the data which was processed based on our data to
+                  make business decisions, I believe that deep down inside,
+                  there is a lot more personal data which is not returned.
+                </p>
               </div>
             </section>
+          </div>
+          <div class="box">
+            <p style="text-align: center">
+              <b>✓ Ready to Grade - 6<sup>th</sup> May 2022</b>
+            </p>
           </div>
         </div>
       </section>
