@@ -78,8 +78,8 @@ mapInfo.forEach(({ id, coords, zoom }) => {
     pointToLayer: function (feature, latlng) {
       if (id == "map_1") {
         console.log(feature.properties.what_kind_of_sound_is_this_);
-        document.getElementById("asdf").innerHTML +=
-          feature.properties.what_kind_of_sound_is_this_ + " ";
+        // document.getElementById("asdf").innerHTML +=
+        //   feature.properties.what_kind_of_sound_is_this_ + " ";
         // Display all sounds
         return L.circleMarker(latlng, {
           radius: 6,
@@ -122,7 +122,7 @@ mapInfo.forEach(({ id, coords, zoom }) => {
       } // Map 2 Begins'
       else if (id == "map_3") {
         const categories = ["Human", "Machine", "Natural", "other"];
-        const colors = ["#ff0000", "#0000ff", "#00ff00", "#ffffff"];
+        const colors = ["#ec526c", "#55a1e5", "#67ce71", "#ffffff"];
 
         for (let i = 0; i < categories.length; i++) {
           if (feature.properties.what_kind_of_sound_is_this_ == categories[i]) {
