@@ -77,7 +77,7 @@ mapInfo.forEach(({ id, coords, zoom }) => {
     },
     pointToLayer: function (feature, latlng) {
       if (id == "map_1") {
-        console.log(feature.properties.what_kind_of_sound_is_this_);
+        // console.log("");
         // document.getElementById("asdf").innerHTML +=
         //   feature.properties.what_kind_of_sound_is_this_ + " ";
         // Display all sounds

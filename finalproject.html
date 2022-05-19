@@ -132,6 +132,9 @@
         line-height: 70px;
         z-index: 999;
       }
+      p {
+        text-align: justify;
+      }
       .brand a,
       .brand a:visited {
         color: #fff;
@@ -382,7 +385,7 @@
           </p>
         </div>
         <div class="image">
-          <img src="images/spotlight01.jpg" alt="" />
+          <img src="images/sound.jpeg" alt="" />
         </div>
       </section>
       <!--
@@ -391,7 +394,7 @@
       <section class="wrapper style1 align-center">
         <div class="inner">
           <span>Final Project</span>
-          <h2>Desert Lullaby</h2>
+          <h2>Desert Acoustics</h2>
           <p style="text-align: center">Listening with Campus</p>
           <div style="text-align: left">
             <p>
@@ -400,19 +403,326 @@
               <i>May 19, 2022 - 1700 words . 5.7 min read</i>
             </p>
           </div>
+          <div class="box">
+            <p>
+              💻 <b>Note</b> : Please view the article on computer for best
+              experience.
+            </p>
+          </div>
+
+          <div class="box align-left">
+            <h4><b>Contents</b></h4>
+            <dl>
+              <dt><a href="#1">1. Introduction</a></dt>
+              <dd>- Rationale</dd>
+              <dd>- Description of Data</dd>
+              <br />
+              <dt><a href="#2">2. Methodology</a></dt>
+              <dd>- Data Collection</dd>
+              <dd>- Data Processing and Analysis</dd>
+              <br />
+              <dt><a href="#3">3. Visualization</a></dt>
+              <dd>- Data Visualization</dd>
+              <br />
+              <dt><a href="#4">4. Analysis</a></dt>
+              <dd>- Key Takeaways</dd>
+              <br />
+
+              <dt><a href="#5">5. Questions and Reflections</a></dt>
+              <dd>- Questions</dd>
+              <dd>- Reflections</dd>
+              <br />
+              <dt>
+                <a href="#6">6. Relation to Course Materials</a>
+              </dt>
+              <dd>- 32 Sounds</dd>
+            </dl>
+          </div>
+
+          <h3 id="1">1. Introduction</h3>
 
           <div class="index align-left">
             <!-- Text -->
             <section>
               <header>
-                <h3>Heading</h3>
+                <h3>Rationale</h3>
               </header>
               <div class="content">
-                <p id="asdf"></p>
-                <div>
-                  <canvas id="FrequencyAnalysis"></canvas>
+                <p>
+                  <span class="firstcharacter">F</span> our class final project,
+                  we are colloboratively working together as the whole class to
+                  collect the geospatial data of different sounds across New
+                  York University Abu Dhabi campus, visualize, analyse, and take
+                  out key trends and observations from them. Together, we
+                  collected a total of 674 data points over a duration of 52
+                  days (from 27<sup>th</sup> March 2022 to 18<sup>th</sup> May
+                  2022).
+                </p>
+
+                <p>
+                  The key idea of the project is not to come up with an
+                  objective sound-map of the campus, but rather to pay attention
+                  to the sounds on the campus and listen with extra attention to
+                  find out the patterns and trends about the campus we have not
+                  discovered before.
+                </p>
+
+                <span class="image fit"
+                  ><img src="images/nyuad.jpeg" alt="nyuad"
+                /></span>
+                <p style="text-align: center">
+                  Figure : New York University Abu Dhabi Campus [<a
+                    href="https://nyuad.nyu.edu/en/about/nyuad-at-a-glance/the-campus.html"
+                    target="_blank"
+                    >Source</a
+                  >]
+                </p>
+
+                <p>
+                  Our campus, shown above, is located on a sandy island.
+                  However, the campus architecture features a good proportion of
+                  concrete and nature. Therefore, we expect a significant
+                  recordings of nature sounds.
+                </p>
+              </div>
+            </section>
+            <section>
+              <header>
+                <h3>Description of Data</h3>
+              </header>
+              <div class="content">
+                <p>
+                  For this project, the students are required to mainly collect
+                  the following data of 20 sounds they heard every week.
+                </p>
+                <!-- Location, Date, Author, Description of sound, Indoor/Outdoor, Level -->
+                <ul>
+                  <li>
+                    <span style="font-family: monospace">Location</span>
+                    : Longitude and Latitude of the student when the data is
+                    collected
+                  </li>
+                  <li>
+                    <span style="font-family: monospace">Date/Time</span>
+                    : Date and time when the sound is collected
+                  </li>
+                  <li>
+                    <span style="font-family: monospace">Author</span>
+                    : The ID of the student collecting the sound
+                  </li>
+                  <li>
+                    <span style="font-family: monospace">Category</span>
+                    : Is the sound generated by humans, machines or nature, or
+                    others
+                  </li>
+                  <li>
+                    <span style="font-family: monospace">Description</span>
+                    : A written description of the sound heard
+                  </li>
+                  <li>
+                    <span style="font-family: monospace">Indoor/Outdoor</span>
+                    : Whether the sound is collected indoor or outdoor
+                  </li>
+                  <li>
+                    <span style="font-family: monospace">Level</span>
+                    : On which floor the student is collecting the sound?
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+
+          <!-- Section 2 -->
+          <h3 id="2">2. Methodology</h3>
+
+          <div class="index align-left">
+            <!-- Text -->
+            <section>
+              <header>
+                <h3>Data Collection</h3>
+              </header>
+              <div class="content">
+                <p>
+                  For the data collection, each student uses their mobile phone
+                  to record the data of the sound - not the sound itself. The
+                  students are allowed to record the data at any time, at any
+                  place on campus so long as 20 data points per week requirement
+                  is met. Survey123 Application by ArcGIS is used by the
+                  students on their phones to note down the details of the
+                  sound, as shown below.
+                </p>
+
+                <span class="image fit"
+                  ><img src="images/survey123.png" alt="survey123"
+                /></span>
+                <p style="text-align: center">
+                  Figure : Survey123 Application used for Data Collection
+                </p>
+              </div>
+            </section>
+            <section>
+              <header>
+                <h3>Data Processing and Analysis</h3>
+              </header>
+              <div class="content">
+                <p>
+                  Students are instructed to use ArcGIS online to store, process
+                  and visualize their data. However, any other tools and
+                  technologies are also allowed so long as they achieve the
+                  task. For our duo, we will be using the following tools to
+                  process and visualize our data.
+                </p>
+
+                <ul>
+                  <li>
+                    <span style="font-family: monospace">
+                      <a href="https://leafletjs.com/" target="_blank"
+                        >Leaflet</a
+                      >
+                    </span>
+                    : The leading open-source JavaScript library for
+                    mobile-friendly interactive maps. We will be doing the data
+                    filtering and rendering using Leaflet and JavaScript for our
+                    maps to be interactive.
+                  </li>
+
+                  <li>
+                    <span style="font-family: monospace">
+                      <a href="https://www.chartjs.org/" target="_blank"
+                        >Chart.js</a
+                      >
+                    </span>
+                    : Chart.js is a free, open-source JavaScript library for
+                    data visualization. We will be using this to plot the bar
+                    charts and pie charts to analyze the frequency of different
+                    sounds on campus.
+                  </li>
+
+                  <li>
+                    <span style="font-family: monospace">
+                      <a href="https://voyant-tools.org/" target="_blank"
+                        >Voyant Tools</a
+                      >
+                    </span>
+                    :A web-based reading and analysis environment for digital
+                    texts. We will be using this to determine the frequency of
+                    the words in different descriptions of the sounds the
+                    students have provided.
+                  </li>
+                </ul>
+
+                <p>
+                  For processing, we exported the data collected by the whole
+                  class as GeoJSON format and imported it as a JavaScript object
+                  into this website.
+                </p>
+              </div>
+            </section>
+          </div>
+
+          <!-- Section 3 -->
+          <h3 id="3">3. Visualization</h3>
+
+          <div class="index align-left">
+            <!-- Text -->
+
+            <section>
+              <header>
+                <h3>Data Visualization</h3>
+              </header>
+              <div class="content">
+                <div class="box">
+                  <p>
+                    ⚠️ <b>IMPORTANT</b> : All the data visualization below are
+                    interactive. Make sure to click the data points, drag the
+                    map around and explore.
+                  </p>
                 </div>
 
+                <p>
+                  Initially, we plotted the data points of our entire raw
+                  dataset on the map of New York University Abu Dhabi campus as
+                  follows (Click on white points to see details about each
+                  sound). It can be seen that the data is relatively well
+                  spreaded across the campus, with slight concentration at the
+                  campus center. If you drag the map below up, you will see a
+                  lone outlier datapoint across Laffan Street. We highly suspect
+                  that datapoint is there due to the GPS approximation error.
+                  Otherwise, students have been widespread across the campus and
+                  have collected various sounds such as music, footsteps,
+                  screaming students 😱, professors talking, just to name a few.
+                </p>
+                <div id="map_1" class="Leafletmap"></div>
+                <p style="text-align: center">Interactive Figure : Raw Data</p>
+
+                <p>
+                  However, this visualization of raw data does not tell much
+                  except to reveal the contents of the data. Therefore, for our
+                  next exploration, we will only be plotting the data points
+                  collected by the two authors (names anonymised on data points
+                  for privacy reasons). As seen in graph below, only the data
+                  points by the authors are selected and visualized. Different
+                  colors indicate different persons. Radius of datapoint
+                  indicates the floor (e.g. larger radius means the data is
+                  collected on a higher floor).
+                </p>
+                <p>
+                  It can be seen that each of the authors mostly spend their
+                  time on one side of the campus only. It can also be seen that
+                  the data points of same color with large radii are
+                  concentrated in two parts of the campus only. This is the
+                  place where each of the author spends most of their time at
+                  (e.g. their dorm rooms). This means that from this data
+                  visualization, one is able to guess the details about the
+                  dwellings of the authors without actually knowing the exact
+                  information 🤯. It has been discussed in class that similar
+                  techniques are used by big tech companies to determine ones'
+                  house locations.However, it is shocking that same analysis can
+                  generate the results from a handful of data points we
+                  collected in class.
+                </p>
+                <div id="map_2" class="Leafletmap"></div>
+                <p style="text-align: center">
+                  Interactive Figure : Locations of data points collected by
+                  authors. Radius represents height above ground.
+                </p>
+
+                <p>
+                  Moreover, we will also perform filters in the overall dataset
+                  to find patterns. In the visualization below, each of the data
+                  point is color coded by their categories (<b
+                    style="color: #55a1e5"
+                    >Blue
+                  </b>
+                  = Machine, <b style="color: #ec526c">Red</b> = Human,
+                  <b style="color: #67ce71">Green</b> = Natural, <b>White</b> =
+                  Other). Again, the radii represents the height above ground
+                  (larger radius = higher). It can be seen clearly that many of
+                  the blue data points have large radii, and green radii has the
+                  smallest data points except one or two. It means that the
+                  higher above the ground, there are more machine sounds, and
+                  the closer to the ground, there are more nature sounds. This
+                  is definitely expected due to the architecture of our campus,
+                  and is reflected in the data visualization.
+                </p>
+
+                <blockquote>
+                  It means that the higher above the ground, there are more
+                  machine sounds, and the closer to the ground, there are more
+                  nature sounds.
+                </blockquote>
+                <div id="map_3" class="Leafletmap"></div>
+                <p style="text-align: center">
+                  Interactive Figure : Data Points formatted by categories and
+                  height above ground
+                </p>
+
+                <p>
+                  Moreover, the pie chart of the frequency of the categories is
+                  also plotted below. It is found that the 'Machine' category
+                  for the sounds have been reported the most with 284 sounds,
+                  followed by Humand and Natural categories.
+                </p>
                 <div style="text-align: center; align-items: center">
                   <div
                     style="width: 50%; margin-left: auto; margin-right: auto"
@@ -420,91 +730,383 @@
                     <canvas id="Analysis2"></canvas>
                   </div>
                 </div>
+
+                <p>
+                  In addition, we also extracted all the descriptions of the
+                  sounds, and analyzed the text in
+                  <a href="https://voyant-tools.org/" target="_blank"
+                    >Voyant Tools</a
+                  >
+                  to see the most frequent words. It is found that 472 unique
+                  words are used by the students to describe all the sounds. The
+                  most common 10 words are as follows.
+                </p>
+
+                <table>
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Word</th>
+                      <th>Frequency</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>sound</td>
+                      <td>30</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>birds</td>
+                      <td>21</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>music</td>
+                      <td>16</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>elevator</td>
+                      <td>15</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>talking</td>
+                      <td>15</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>ac</td>
+                      <td>14</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>water</td>
+                      <td>14</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>students</td>
+                      <td>13</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>chirping</td>
+                      <td>12</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>door</td>
+                      <td>12</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <p>
+                  It can be seen that apart from the word 'sound', 'bird' is the
+                  word which is most commonly used to describe the sounds on
+                  campus, followed by 'music'. Therefore, it can be said that
+                  the campus is green enough to attract all the birds. As seen
+                  in bar graph below, the frequency of the use of word 'bird' is
+                  significantly more than other words used to describe the
+                  sound.
+                </p>
+
+                <div>
+                  <canvas id="FrequencyAnalysis"></canvas>
+                </div>
+
+                <p>
+                  It may seem as a contradiction that although the 'Machine' is
+                  the most frequent category of the sounds reported, 'Bird' is
+                  the most frequent word used to describe the sounds. However,
+                  it simply means that
+                  <i
+                    >there are many more machines sounds than the bird sounds on
+                    campus, but the machine sounds are so diverse (e.g. AC,
+                    engines, vents) so that not one word can be used to describe
+                    them.</i
+                  >
+                  Therefore, this finding suggests that the campus is mostly
+                  filled with machine sounds, which are dull.
+                </p>
+                <p>
+                  Last but not least, the data points containing two most common
+                  words to describe the sounds (Bird and Music) is plotted
+                  separately below. Again, the radii represents the height above
+                  ground.
+                </p>
+                <div id="map_4" class="Leafletmap"></div>
+                <p style="text-align: center">Interactive Figure : Birds</p>
+                <p>
+                  It can be seen that although the birds are frequent and
+                  concentrated at campus center on the ground, students also
+                  hear them while they are at their 6th floor dorm rooms, on the
+                  sides of the campus.
+                </p>
+                <div id="map_5" class="Leafletmap"></div>
+                <p style="text-align: center">Interactive Figure : Music</p>
+                <p>
+                  Similar argument above can be also made for music. It seems
+                  when not at the campus center, students seem to listen to
+                  music (or hear music) high above the ground in their dorm
+                  rooms (except in dining halls, which always play music and are
+                  located on the ground).
+                </p>
+                <br />
               </div>
             </section>
           </div>
-          <!-- <div id="map" class="Leafletmap"></div> -->
 
-          <div id="map_1" class="Leafletmap"></div>
-          Raw Data
-          <div id="map_2" class="Leafletmap"></div>
-          Pi Malak
-          <div id="map_3" class="Leafletmap"></div>
-          Human Machine Others
+          <!-- Section 4 -->
 
-          <div id="map_4" class="Leafletmap"></div>
-          Birds
-          <div id="map_5" class="Leafletmap"></div>
-          Music
-          <br />
-          472 unique words reported
-          <!-- Data Sample -->
+          <h3 id="4">4. Analysis</h3>
+
           <div class="index align-left">
-            <div>
-              <table>
-                <thead>
-                  <tr>
-                    <th>#</th>
-                    <th>Word</th>
-                    <th>Frequency</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>sound</td>
-                    <td>30</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>birds</td>
-                    <td>21</td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>music</td>
-                    <td>16</td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>elevator</td>
-                    <td>15</td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>talking</td>
-                    <td>15</td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td>ac</td>
-                    <td>14</td>
-                  </tr>
-                  <tr>
-                    <td>7</td>
-                    <td>water</td>
-                    <td>14</td>
-                  </tr>
-                  <tr>
-                    <td>8</td>
-                    <td>students</td>
-                    <td>13</td>
-                  </tr>
-                  <tr>
-                    <td>9</td>
-                    <td>chirping</td>
-                    <td>12</td>
-                  </tr>
-                  <tr>
-                    <td>10</td>
-                    <td>door</td>
-                    <td>12</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <!-- Text -->
+
+            <section>
+              <header>
+                <h3>Key Takeaways</h3>
+              </header>
+              <div class="content">
+                <p>
+                  From the data visualizations above, we can make the following
+                  generalizations about the campus.
+                </p>
+
+                <ul>
+                  <li>The campus is mostly filled with machine sounds.</li>
+                  <li>
+                    From the data points collected, it is possible to determine
+                    the location of the dorm room of a person.
+                  </li>
+                  <li>
+                    Machine sounds generally occur high above the ground, and
+                    the nature sounds occur at ground level.
+                  </li>
+                  <li>
+                    Students mostly either stay at the campus center on ground
+                    floor, or inside their dorm rooms high above the ground.
+                    They do not usually go to other areas to campus to collect
+                    data.
+                  </li>
+                </ul>
+              </div>
+            </section>
           </div>
-          <!-- Table Ends -->
+
+          <!-- Section 5 -->
+
+          <h3 id="5">5. Questions and Reflections</h3>
+
+          <div class="index align-left">
+            <!-- Text -->
+
+            <section>
+              <header>
+                <h3>Questions</h3>
+              </header>
+              <div class="content">
+                <p>
+                  We have also tackled some of the guiding questions and
+                  reflections presented in the
+                  <a
+                    href="https://sites.google.com/nyu.edu/qs-s22/guidelines/final-assignment?authuser=0"
+                    target="_blank"
+                    >guideline</a
+                  >
+                  as follows.
+                </p>
+                <p><b>What can sousveillance on our campus teach you? </b></p>
+                <p>
+                  It made us more aware and conscious of sounds on campus as we
+                  collected them.
+                </p>
+                <p>
+                  <b
+                    >To ask Lamden's question, what does this soundmapping
+                    exercise "have to do with privacy?"</b
+                  >
+                </p>
+                <p>
+                  It in a way violates the privacy of the students as it can
+                  create a map of where they go everyday and what sounds mostly
+                  stand out to them.
+                </p>
+                <p>
+                  <b
+                    >How does the creation of a Survey123 data collection
+                    exercise sit between raw data and information (Lamdan)?
+                  </b>
+                </p>
+                <p>
+                  Through cleaning the data collected from Survey123 (cleaning
+                  the raw data), we can analyze the cleaned data and generate
+                  information based on that.
+                </p>
+                <p>
+                  <b
+                    >What might you do with the data from this exercise to make
+                    campus a better place? or to tell an interesting story about
+                    campus to someone who has never been there?
+                  </b>
+                </p>
+                <p>
+                  We think that we can look at where unpleasant loud sounds were
+                  heard and work on implementing techniques on campus to reduce
+                  those sounds. Moreover, we believe that if we play most of the
+                  sounds collected for every location on campus to an external
+                  person who has never been on campus, they would have a great
+                  idea of what a regular student's experience on campus is,
+                  without setting foot on campus.
+                </p>
+                <p>
+                  <b
+                    >If you were to redesign this exercise what would you add?
+                    Subtract?
+                  </b>
+                </p>
+                <p>
+                  We would set reminders at constant times throughout the day to
+                  collect data. We would also make it obligatory to visit a new
+                  spot on campus and collect sounds from there at least once a
+                  week to make sure that the data collected is overall more
+                  encompassing.
+                </p>
+                <p><b></b></p>
+                <p></p>
+                <p><b></b></p>
+                <p></p>
+                <p><b></b></p>
+                <p></p>
+                <p><b></b></p>
+                <p></p>
+                <p><b></b></p>
+                <p></p>
+              </div>
+            </section>
+
+            <section>
+              <header>
+                <h3>Reflections</h3>
+              </header>
+              <div class="content">
+                <p>
+                  <b
+                    >How easy or complex was the data collection process? From
+                    analyzing the various fields, time and date stamps, do you
+                    think we have a good sample of observations about campus? a
+                    "good enough" sample? If you think that we need more data,
+                    how would we go about that process?
+                  </b>
+                </p>
+                <p>
+                  Because we went to the same set of places everyday, and
+                  collected the sounds that we observed, we think that the range
+                  of sounds was not as much as we expected it to be.
+                  Nevertheless, we were quite underwhelmed by the range of
+                  different sounds all across campus.
+                </p>
+                <p>
+                  <b
+                    >What kinds of sounds were noticed by the data collectors on
+                    campus? How much variety is there? What are the outliers?
+                  </b>
+                </p>
+                <p>
+                  We mainly noticed that students recorded sounds of birds
+                  chirping, crickets, professors speaking, and AC sounds. The
+                  most commonly used words to describe the sounds are mentioned
+                  above.
+                </p>
+                <p>
+                  <b
+                    >Did we accomplish the act of "listening with" our campus?
+                    Can you say that you have a new kind of awareness of, or
+                    connectedness with, the space in which we live? are we able
+                    to show empathy for others using data? or does the mapping
+                    process simply reinforce our resignation or surveillance
+                    realism? or does it reinforce the "atomisation" of
+                    individual action (Hintz et al)?</b
+                  >
+                </p>
+                <p>
+                  There is definitely a new kind of awareness achieved from this
+                  exercise. As we have to remember to record about twenty sounds
+                  a week, we now activate a new sense of listening closely “with
+                  campus” and recording any sounds that we observe.
+                </p>
+                <p>
+                  <b
+                    >Could this project have been carried out by non-human
+                    actors?
+                  </b>
+                </p>
+                <p>
+                  If the non-human actors moved around campus daily and explored
+                  different places on campus, then for sure they can even do it
+                  better than humans 🤖! However, some machine learning would
+                  have to happen prior to that by humans.
+                </p>
+                <p>
+                  <b
+                    >What do you think that machine learning might make of the
+                    data you collected?
+                  </b>
+                </p>
+                <p>
+                  It could classify certain areas around campus with the sounds
+                  that are most frequent there. It can then use this information
+                  to know where people mostly gathered at. In addition, it can
+                  identify any devices malfunctioning. For instance, if the
+                  sound if an AC is not present at its usual frequency, it means
+                  the AC is broken.
+                </p>
+                <p><b></b></p>
+                <p></p>
+                <p><b></b></p>
+                <p></p>
+                <p><b></b></p>
+                <p></p>
+                <p><b></b></p>
+                <p></p>
+                <p><b></b></p>
+                <p></p>
+              </div>
+            </section>
+          </div>
+
+          <!-- Section 6 -->
+
+          <h3 id="6">6. Relation to Course Materials</h3>
+
+          <div class="index align-left">
+            <section>
+              <header>
+                <h3>32 Sounds</h3>
+              </header>
+              <div class="content">
+                <p>
+                  To us, the final project is akin to what we did during the
+                  screening of 32 Sounds, a film by
+                  <a href="https://www.wikiwand.com/en/Sam_Green">Sam Green</a>
+                  . During the screening of the film, we were asked to listen to
+                  the silence for a minute. As we go quiet for a long time, our
+                  sense of hearing deepens and we are able to hear sounds that
+                  we did not hear before. In this project, we are doing the same
+                  thing, but on the campus wide scale.
+                </p>
+              </div>
+            </section>
+          </div>
+          <div class="box">
+            <p style="text-align: center">
+              <b>✓ Ready to Grade - 19<sup>th</sup> May 2022</b>
+            </p>
+          </div>
         </div>
       </section>
       <!-- Footer -->
@@ -665,7 +1267,7 @@
           plugins: {
             title: {
               display: true,
-              text: "Trip Distance Analysis",
+              text: "Frequency Analysis",
             },
           },
           scales: {
@@ -673,14 +1275,14 @@
               display: true,
               title: {
                 display: true,
-                text: "Distance (Miles)",
+                text: "Frequency occured in dataset",
               },
             },
             x: {
               display: true,
               title: {
                 display: true,
-                text: "Trip Date and Time (in Coordinated Universal Time - UTC)",
+                text: "Word",
               },
             },
           },
