@@ -106,6 +106,10 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
     <style>
+      .Leafletmap {
+        height: 550px;
+        outline: none;
+      }
       body {
         margin: 0px;
         padding: 0px;
@@ -134,7 +138,7 @@
         text-decoration: none;
       }
       #navbar {
-        z-index: 998;
+        z-index: 999998;
       }
       .nav-container {
         max-width: 1000px;
@@ -293,6 +297,10 @@
     /></noscript>
     <script src="./libs/jquery.min.js"></script>
     <script src="./libs/chart.min.js"></script>
+    <!-- Add Leaflet JS -->
+    <link rel="stylesheet" href="./libs/leaflet.css" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="./libs/leaflet.js"></script>
   </head>
 
   <body class="is-preload">
@@ -382,8 +390,17 @@
       -->
       <section class="wrapper style1 align-center">
         <div class="inner">
-          <h2>Final Project</h2>
-          <p>Subtitle to Final Project</p>
+          <span>Final Project</span>
+          <h2>Desert Lullaby</h2>
+          <p style="text-align: center">Listening with Campus</p>
+          <div style="text-align: left">
+            <p>
+              <b>Malak Mansour, Pi Ko</b>
+              <br />
+              <i>May 19, 2022 - 1700 words . 5.7 min read</i>
+            </p>
+          </div>
+
           <div class="index align-left">
             <!-- Text -->
             <section>
@@ -391,22 +408,105 @@
                 <h3>Heading</h3>
               </header>
               <div class="content">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </p>
+                <p id="asdf"></p>
+                <div>
+                  <canvas id="FrequencyAnalysis"></canvas>
+                </div>
+
+                <div style="text-align: center; align-items: center">
+                  <div
+                    style="width: 50%; margin-left: auto; margin-right: auto"
+                  >
+                    <canvas id="Analysis2"></canvas>
+                  </div>
+                </div>
               </div>
             </section>
           </div>
+          <!-- <div id="map" class="Leafletmap"></div> -->
+
+          <div id="map_1" class="Leafletmap"></div>
+          Raw Data
+          <div id="map_2" class="Leafletmap"></div>
+          Pi Malak
+          <div id="map_3" class="Leafletmap"></div>
+          Human Machine Others
+
+          <div id="map_4" class="Leafletmap"></div>
+          Birds
+          <div id="map_5" class="Leafletmap"></div>
+          Music
+          <br />
+          472 unique words reported
+          <!-- Data Sample -->
+          <div class="index align-left">
+            <div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Word</th>
+                    <th>Frequency</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>sound</td>
+                    <td>30</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>birds</td>
+                    <td>21</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>music</td>
+                    <td>16</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>elevator</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>talking</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>ac</td>
+                    <td>14</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>water</td>
+                    <td>14</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>students</td>
+                    <td>13</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>chirping</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>door</td>
+                    <td>12</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Table Ends -->
         </div>
       </section>
-
       <!-- Footer -->
       <footer class="wrapper style1 align-center">
         <div class="inner">
@@ -513,5 +613,122 @@
     <script src="assets/js/main.js"></script>
     <!-- Note: Only needed for demo purposes. Delete for production sites. -->
     <script src="assets/js/demo.js"></script>
+    <script src="./assets/js/sample-geojson.js" type="text/javascript"></script>
+    <script src="assets/js/leafletmaps.js"></script>
+    <script src="assets/js/leafletmap2.js"></script>
+    <script>
+      // Distance Analysis
+      const distance_analysis_data = {
+        labels: [
+          "sound",
+          "birds",
+          "music",
+          "elevator",
+          "talking",
+          "ac",
+          "water",
+          "students",
+          "chirping",
+          "door",
+        ],
+        datasets: [
+          {
+            label: "Frequency",
+            data: [30, 21, 16, 15, 15, 14, 14, 13, 12, 12],
+            backgroundColor: [
+              "rgba(255, 99, 132, 0.2)",
+              "rgba(255, 159, 64, 0.2)",
+              "rgba(255, 205, 86, 0.2)",
+              "rgba(75, 192, 192, 0.2)",
+              "rgba(54, 162, 235, 0.2)",
+              "rgba(153, 102, 255, 0.2)",
+              "rgba(201, 203, 207, 0.2)",
+            ],
+            borderColor: [
+              "rgb(255, 99, 132)",
+              "rgb(255, 159, 64)",
+              "rgb(255, 205, 86)",
+              "rgb(75, 192, 192)",
+              "rgb(54, 162, 235)",
+              "rgb(153, 102, 255)",
+              "rgb(201, 203, 207)",
+            ],
+            borderWidth: 1,
+          },
+        ],
+      };
+
+      const config_distance_analysis = {
+        type: "bar",
+        data: distance_analysis_data,
+        options: {
+          plugins: {
+            title: {
+              display: true,
+              text: "Trip Distance Analysis",
+            },
+          },
+          scales: {
+            y: {
+              display: true,
+              title: {
+                display: true,
+                text: "Distance (Miles)",
+              },
+            },
+            x: {
+              display: true,
+              title: {
+                display: true,
+                text: "Trip Date and Time (in Coordinated Universal Time - UTC)",
+              },
+            },
+          },
+        },
+      };
+      const most_visited_chart = new Chart(
+        document.getElementById("FrequencyAnalysis"),
+        config_distance_analysis
+      );
+    </script>
+
+    <!-- Pie Chart -->
+    <script>
+      const data3 = {
+        labels: ["Human", "Natural", "Machine", "Other"],
+        datasets: [
+          {
+            label: "My First Dataset",
+            data: [259, 104, 284, 27],
+            backgroundColor: [
+              "rgb(255, 99, 132)",
+              "rgb(54, 162, 235)",
+              "rgb(255, 205, 86)",
+              "rgb(255, 159, 64)",
+            ],
+            hoverOffset: 4,
+          },
+        ],
+      };
+
+      const config3 = {
+        type: "doughnut",
+        data: data3,
+        options: {
+          plugins: {
+            title: {
+              display: true,
+              text: "Frequency of each categories",
+            },
+            subtitle: {
+              display: false,
+              text: "Click on colored rectangles below to show/hide data. Hover on points to see subjective remarks. ",
+            },
+          },
+          scales: {},
+        },
+      };
+      const PieChart = new Chart(document.getElementById("Analysis2"), config3);
+    </script>
   </body>
 </html>
