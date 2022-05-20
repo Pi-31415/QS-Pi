@@ -20,11 +20,11 @@ const raw_data = {
     {
       name: "Data Brokerage",
       group: "2",
-      image: "None",
+      image: "./images/mindmap/1.jpeg",
       type: "Theme",
       author: "None",
       date: "5/12/2022, 9:10:10 AM",
-      text: "Data Brokerage",
+      text: "The process of collecting personal data and selling to third parties. This is closely linked to the topic of privacy.",
       x: 1028.7439346904146,
       y: 291.1070661075511,
       index: 1,
@@ -36,11 +36,11 @@ const raw_data = {
     {
       name: "Big Other",
       group: "2",
-      image: "None",
+      image: "./images/mindmap/3.jpeg",
       type: "Theme",
-      author: "None",
+      author: "Shoshana Zuboff",
       date: "5/12/2022, 9:10:46 AM",
-      text: "Big Other",
+      text: "It is a ubiquitous networked institutional regime that records, modifies, and commodifies everyday experience from toasters to bodies, communication to thought, all with a view to establishing new pathways to monetization and profit",
       x: 914.0692509765325,
       y: 236.08116273838456,
       index: 2,
@@ -52,11 +52,11 @@ const raw_data = {
     {
       name: "Smart Toothbrush",
       group: "2",
-      image: "None",
+      image: "./images/mindmap/2.webp",
       type: "Theme",
       author: "None",
       date: "5/12/2022, 9:11:09 AM",
-      text: "Smart Toothbrush",
+      text: "A toothbrush connected to your phone to record and analyze your dental data. It came up during our last class conversation, and I think it's a product of capitalism.",
       x: 930.814919165915,
       y: 743.2336588008565,
       index: 3,
@@ -68,11 +68,11 @@ const raw_data = {
     {
       name: "Surveillance Capitalism",
       group: "2",
-      image: "None",
+      image: "./images/res_2_surveil.jpeg",
       type: "Theme",
-      author: "None",
+      author: "Shoshana Zuboff",
       date: "5/12/2022, 9:11:33 AM",
-      text: "Surveillance Capitalism",
+      text: "Surveillance Capitalism means that Big Tech corporations have been finding stealthy ways to collect our data and turn it into a market commodity. I think it concerns with our privacy.",
       x: 1122.5759983154826,
       y: 296.65093167342656,
       index: 4,
@@ -82,13 +82,13 @@ const raw_data = {
       fixed: 0,
     },
     {
-      name: "Panopticon ",
+      name: "Panopticon",
       group: "2",
-      image: "None",
+      image: "./images/mindmap/4.jpeg",
       type: "Theme",
-      author: "None",
+      author: "Jeremy Bentham ",
       date: "5/12/2022, 9:11:49 AM",
-      text: "Panopticon ",
+      text: "Panopticon is a building designed to allow all prisoners of an institution to be observed by a single security guard, without the inmates being able to tell whether they are being watched. Foucault compares schools and workplace as Panopticons-like places, so that they are connected.",
       x: 1042.6621544119091,
       y: 225.7780186098945,
       index: 5,
@@ -100,11 +100,11 @@ const raw_data = {
     {
       name: "Benjamin Franklin",
       group: "2",
-      image: "None",
+      image: "./images/mindmap/5.jpeg",
       type: "Theme",
       author: "None",
       date: "5/12/2022, 9:12:06 AM",
-      text: "Benjamin Franklin",
+      text: "Benjamin Franklin was one of the earliest recorded people who quantified themselves to improve their virtues.",
       x: 496.0101216424026,
       y: 218.36679316081734,
       index: 6,
@@ -116,11 +116,11 @@ const raw_data = {
     {
       name: "Right to Repair",
       group: "2",
-      image: "None",
+      image: "./images/mindmap/6.jpeg",
       type: "Theme",
       author: "None",
       date: "5/12/2022, 9:12:33 AM",
-      text: "Right to Repair",
+      text: "Right to Repair is a proposed legislation that would provide the practical means for electronics equipment owners to repair their devices. It is a response to planned obsolescence.",
       x: 881.6232782540624,
       y: 947.8412962874486,
       index: 7,
@@ -132,11 +132,11 @@ const raw_data = {
     {
       name: "Planned Obsolescence",
       group: "2",
-      image: "None",
+      image: "./images/mindmap/7.jpeg",
       type: "Theme",
       author: "None",
       date: "5/12/2022, 9:13:16 AM",
-      text: "Planned Obsolescence",
+      text: "Planned obsolescence is a purposeful strategy to ensure the current version of a product will become out of date or useless within a known time period.",
       x: 851.8879904126711,
       y: 807.0789153894204,
       index: 8,
@@ -148,11 +148,11 @@ const raw_data = {
     {
       name: "Right to be forgotten",
       group: "2",
-      image: "None",
+      image: "./images/mindmap/8.png",
       type: "Theme",
       author: "None",
       date: "5/12/2022, 9:13:38 AM",
-      text: "Right to be forgotten",
+      text: "The right to have private information about a person be removed from Internet searches and other directories under some circumstances. ",
       x: 1263.8595402852195,
       y: 226.13974686208644,
       index: 9,
@@ -164,11 +164,11 @@ const raw_data = {
     {
       name: "Dead Bots",
       group: "2",
-      image: "None",
+      image: "./images/mindmap/9.jpeg",
       type: "Theme",
       author: "None",
       date: "5/12/2022, 9:13:50 AM",
-      text: "Dead Bots",
+      text: "In class discussions, we also talked about what happens to our data online after we die, and the possibility of reviving a person with a virtual avatar from their data.",
       x: 676.4225603630271,
       y: 213.2222342131741,
       index: 10,
@@ -180,11 +180,11 @@ const raw_data = {
     {
       name: "Deep Listening",
       group: "2",
-      image: "None",
+      image: "./images/mindmap/10.webp",
       type: "Theme",
       author: "None",
       date: "5/12/2022, 9:13:59 AM",
-      text: "Deep Listening",
+      text: "Deep Listening is a concept by Sam Green mentioned during the screening of his documentary, 32 Sounds.",
       x: 586.9723248963485,
       y: 192.31923436620386,
       index: 11,
@@ -196,11 +196,11 @@ const raw_data = {
     {
       name: "Capitalism",
       group: "3",
-      image: "None",
+      image: "./images/mindmap/11.jpeg",
       type: "Media",
       author: "None",
       date: "5/12/2022, 9:15:09 AM",
-      text: "Capitalism",
+      text: "Anything which is about Capitalism",
       x: 825.6281821052146,
       y: 632.0754717344468,
       index: 12,
@@ -212,11 +212,11 @@ const raw_data = {
     {
       name: "Privacy",
       group: "3",
-      image: "None",
+      image: "./images/mindmap/12.jpeg",
       type: "Media",
       author: "None",
       date: "5/12/2022, 9:15:30 AM",
-      text: "Privacy",
+      text: "Anything which is about Privacy",
       x: 931.4767860734568,
       y: 374.08526640057676,
       index: 13,
@@ -228,11 +228,11 @@ const raw_data = {
     {
       name: "Data",
       group: "3",
-      image: "None",
+      image: "./images/mindmap/13.jpeg",
       type: "Media",
       author: "None",
       date: "5/12/2022, 9:16:37 AM",
-      text: "Data",
+      text: "Anything which is about Data",
       x: 585.6037683282887,
       y: 323.7319686581961,
       index: 14,
@@ -244,11 +244,11 @@ const raw_data = {
     {
       name: "Quantified Self",
       group: "3",
-      image: "None",
+      image: "./images/mindmap/14.jpeg",
       type: "Media",
       author: "None",
       date: "5/12/2022, 9:19:37 AM",
-      text: "Quantified Self",
+      text: "Quantified Self, the core topic of this class.",
       x: 746.42339988584,
       y: 466.456287899945,
       index: 15,
@@ -260,11 +260,11 @@ const raw_data = {
     {
       name: "Data feminism",
       group: "2",
-      image: "None",
+      image: "./images/mindmap/15.webp",
       type: "Theme",
-      author: "None",
+      author: "D'Ignazio and Klein",
       date: "5/12/2022, 9:39:22 AM",
-      text: "Understand the labour that goes into making that data",
+      text: "Data feminism is a concept by  D'Ignazio and Klein about how the differentials of power can be challenged and changed in data science. In class, we talked about the need to understand the labour that goes into making that data.",
       x: 444.90172104463625,
       y: 306.0397371206205,
       index: 16,
@@ -276,11 +276,11 @@ const raw_data = {
     {
       name: "Dear Data",
       group: "2",
-      image: "None",
+      image: "./images/mindmap/16.png",
       type: "Theme",
-      author: "None",
+      author: "Giorgia Lupi and Stefanie Posavec",
       date: "5/20/2022, 7:23:56 PM",
-      text: "",
+      text: "Dear Data is a year-long, analog data drawing project by Giorgia Lupi and Stefanie Posavec, two award-winning information designers living on different sides of the Atlantic.",
       x: 311.45040615076095,
       y: 548.957102219442,
       index: 17,
@@ -660,7 +660,7 @@ const raw_data = {
   ],
   links: [
     { source: 4, target: 9 },
-    { source: 8, target: 7 },
+    { source: 12, target: 7 },
     { source: 8, target: 12 },
     { source: 4, target: 13 },
     { source: 12, target: 3 },
@@ -709,6 +709,8 @@ const raw_data = {
     { source: 10, target: 40 },
   ],
 };
+
+// console.log(raw_data.nodes);
 
 //AJAX Request
 var request;
@@ -1031,21 +1033,21 @@ function mousemove() {
     if (Math.sqrt(dx * dx + dy * dy) > 10) {
       // draw a line
       if (!new_line) {
-        new_line = linesg.append("line").attr("class", "new_line");
+        // new_line = linesg.append("line").attr("class", "new_line");
       }
-      new_line
-        .attr("x1", function (d) {
-          return selected_node.x;
-        })
-        .attr("y1", function (d) {
-          return selected_node.y;
-        })
-        .attr("x2", function (d) {
-          return x;
-        })
-        .attr("y2", function (d) {
-          return y;
-        });
+      // new_line
+      //   .attr("x1", function (d) {
+      //     return selected_node.x;
+      //   })
+      //   .attr("y1", function (d) {
+      //     return selected_node.y;
+      //   })
+      //   .attr("x2", function (d) {
+      //     return x;
+      //   })
+      //   .attr("y2", function (d) {
+      //     return y;
+      //   });
     }
   }
   update();
