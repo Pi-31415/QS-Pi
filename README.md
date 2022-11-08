@@ -13,6 +13,6 @@ The site is directly deployed on Vercel at [https://qs-pi.vercel.app](https://qs
 
 ## Screenshots
 
-![1](./images/s1.png)
+![1](./img/s1.PNG)
 
-![2](./images/s2.png)
+![2](./img/s2.PNG)
